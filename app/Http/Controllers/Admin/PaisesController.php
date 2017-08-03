@@ -33,8 +33,13 @@ class PaisesController extends Controller
    public function listaestados($id){
           return Estados::where('estado_idPais', $id)->get();
     }
+<<<<<<< HEAD
 
 
+=======
+    
+   
+>>>>>>> 6d25dbe69adc20413b828cae0fb8f8dccdfedc64
 
     public function getestados(Request $request){
         if($request->ajax()){

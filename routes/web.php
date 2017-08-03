@@ -73,6 +73,7 @@ Route::group(['middleware' => 'web'], function () {
 
 
     Route::get('/estados/{id}','Admin\PaisesController@listaestados');
+<<<<<<< HEAD
 
 
 
@@ -94,9 +95,14 @@ Route::group(['middleware' => 'web'], function () {
 //   //echo trans($lang);
 //   return redirect()->back();
 // })->middleware('language'); 
+=======
+>>>>>>> 6d25dbe69adc20413b828cae0fb8f8dccdfedc64
 
 
 
 
+   
+});
 
+ 
 
