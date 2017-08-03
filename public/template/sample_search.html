@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>        
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />    
+    <!--[if gt IE 8]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />        
+    <![endif]-->                
+    <title>Search Result - Leo - Premium Admin Template</title>
+    <link rel="icon" type="image/ico" href="favicon.ico"/>
+    
+    <link href="css/stylesheets.css" rel="stylesheet" type="text/css" />
+    
+    <!--[if lte IE 7]>
+        <script type='text/javascript' src='js/other/lte-ie7.js'></script>
+    <![endif]-->    
+    
+    <script type='text/javascript' src='js/jquery/jquery.min.js'></script>
+    <script type='text/javascript' src='js/jquery/jquery-ui-1.10.3.custom.min.js'></script>
+    <script type='text/javascript' src='js/jquery/jquery-migrate.min.js'></script>
+    <script type='text/javascript' src='js/jquery/globalize.js'></script>
+    
+    <script type='text/javascript' src='js/bootstrap/bootstrap.min.js'></script>
+    <script type='text/javascript' src='js/cookies/jquery.cookies.2.2.0.min.js'></script>
+    
+    <script type='text/javascript' src='js/uniform/jquery.uniform.min.js'></script>
+    <script type='text/javascript' src='js/ibutton/jquery.ibutton.min.js'></script>    
+    
+    <script type='text/javascript' src='js/scrollup/jquery.scrollUp.min.js'></script>
+    
+    <script type='text/javascript' src='js/plugins.js'></script>    
+    <script type='text/javascript' src='js/actions.js'></script>
+</head>
+<body>    
+    
+    <div id="wrapper">
+        
+        <div id="header">
+            
+            <div class="wrap">
+                
+                <a href="index.html" class="logo"></a>
+                
+                <div class="buttons fl">
+                    <div class="item">
+                        <a href="#" class="btn btn-primary btn-sm c_layout">
+                            <span class="i-layout-8"></span>                            
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="btn btn-primary btn-sm c_screen">
+                            <span class="i-stretch"></span>                            
+                        </a>
+                    </div>                    
+                </div>
+                
+                <div class="buttons">
+                    <div class="item">
+                        <a href="#" class="btn btn-primary btn-sm">
+                            <span class="i-cog"></span>
+                        </a>
+                        <div class="popup">
+                            <div class="head">
+                                <h2>Settings</h2>
+                            </div>
+                            <div class="content np">      
+                                <div class="row">
+                                    <div class="controls-row">
+                                        <div class="col-md-3">Themes:</div>
+                                        <div class="col-md-9 themes">
+                                            <a href="#" class="default tip" data-theme="" title="Default"></a>
+                                            <a href="#" class="dark tip" data-theme="themeDark" title="Dark"></a>
+                                            <a href="#" class="simple tip" data-theme="themeSimple" title="Simple"></a>
+                                            <div class="help-block">On click theme will changed and saved settings</div>
+                                        </div>
+                                    </div>               
+                                    <div class="controls-row">
+                                        <div class="col-md-3">Backgrounds:</div>
+                                        <div class="col-md-9 backgrounds">
+                                            <a href="#" class="default tip" data-theme="" title="Default"></a>                                            
+                                            <a href="#" class="b_bcrosshatch" data-back="b_bcrosshatch"></a>
+                                            <a href="#" class="b_crosshatch" data-back="b_crosshatch"></a>
+                                            <a href="#" class="b_cube" data-back="b_cube"></a>
+                                            <a href="#" class="b_dots" data-back="b_dots"></a>
+                                            <a href="#" class="b_grid" data-back="b_grid"></a>
+                                            <a href="#" class="b_hline" data-back="b_hline"></a>
+                                            <a href="#" class="b_simple" data-back="b_simple"></a>
+                                            <a href="#" class="b_vline" data-back="b_vline"></a>
+                                            <div class="help-block">On click background will changed and saved settings</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <div class="side fr">
+                                    <button class="btn btn-primary popup-close">Close</button>
+                                </div>                                
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="item">
+                        <a href="#" class="btn btn-primary btn-sm">
+                            <span class="i-chat"></span>
+                        </a>
+                        <div class="popup">
+                            <div class="head">
+                                <h2>Messages</h2>
+                            </div>
+                            <div class="content npb messages minify" id="messages"></div>
+                            <div class="footer">
+                                <div class="side fl">
+                                    <button class="btn btn-link">Show all</button>
+                                </div>
+                                <div class="side fr">
+                                    <button class="btn btn-primary popup-close">Close</button>
+                                </div>                                
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="item">                        
+                        <div class="btn-group">                        
+                            <a href="#" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
+                                <span class="i-forward"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><span class="i-profile"></span> Profile</a></li>
+                                <li><a href="#"><span class="i-tools"></span> Controls</a></li>                                
+                                <li><a href="#"><span class="i-locked"></span> Lock</a></li>
+                                <li><a href="#"><span class="i-forward"></span> Logout</a></li>
+                            </ul> 
+                        </div>
+                    </div>                
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div id="layout">
+        
+            <div id="sidebar">
+
+                <div class="user">
+                    <div class="pic">
+                        <img src="img/examples/users/dmitry_m.jpg"/>
+                    </div>
+                    <div class="info">
+                        <div class="name">
+                            <a href="#">John Doe</a>
+                        </div>
+                        <div class="buttons">
+                            <a href="#"><span class="i-cog"></span> Settings</a>
+                            <a href="#"><span class="i-chat"></span> Messages</a>
+                            <a href="#" class="fr"><span class="i-forward"></span> Logout</a>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="navigation">
+                    <li>
+                        <a href="index.html">Dashboard</a>
+                    </li>
+                    <li class="openable">
+                        <a href="#">UI Elements</a>
+                        <ul>
+                            <li>
+                                <a href="ui_elements.html">Elements</a>
+                            </li>
+                            <li>
+                                <a href="ui_widgets.html">Widgets</a>
+                            </li>
+                            <li>
+                                <a href="ui_buttons.html">Buttons</a>
+                            </li>
+                            <li>
+                                <a href="ui_icons.html">Icons</a>
+                            </li>
+                            <li>
+                                <a href="ui_grid.html">Grid system</a>
+                            </li>                        
+                        </ul>
+                    </li> 
+                    <li class="openable">
+                        <a href="#">Form Stuff</a>
+                        <ul>
+                            <li>
+                                <a href="form_elements.html">Form elements</a>
+                            </li>                            
+                            <li>
+                                <a href="form_validation.html">Form validation</a>
+                            </li>                                                        
+                            <li>
+                                <a href="form_wizard.html">Wizard</a>
+                            </li>
+                            <li>
+                                <a href="form_wysiwyg.html">WYSIWYG</a>
+                            </li>
+                            <li>
+                                <a href="form_code_editor.html">Code editor</a>
+                            </li>
+                        </ul>                        
+                    </li>                
+                    <li>
+                        <a href="messages.html">Messages</a>
+                    </li>                                
+                    <li>
+                        <a href="charts.html">Charts</a>
+                    </li>                                   
+                    <li class="openable">                        
+                        <a href="tables.html">Tables</a>
+                        <ul>
+                            <li>
+                                <a href="tables_default.html">Default tables</a>
+                            </li>
+                            <li>
+                                <a href="tables_sort.html">Sorting tables</a>
+                            </li>
+                            <li>
+                                <a href="tables_edit.html">Editable tables</a>
+                            </li>
+                        </ul>
+                    </li>                 
+                    <li>
+                        <a href="typography.html">Typography</a>                       
+                    </li>
+                    <li>
+                        <a href="files.html">File handling</a>                       
+                    </li>
+                    <li>
+                        <a href="calendar.html">Calendar</a>                       
+                    </li>                    
+                    <li class="openable">
+                        <a href="#">Maps</a>
+                        <ul>
+                            <li>
+                                <a href="maps_vector.html">Vector maps</a>
+                            </li>
+                            <li>
+                                <a href="maps_google.html">Google maps</a>
+                            </li>                            
+                        </ul>
+                    </li>                    
+                    <li class="openable open">
+                        <a href="#">Sample Pages</a>
+                        <ul>
+                            <li>
+                                <a href="sample_login.html">Login</a>
+                            </li>     
+                            <li>
+                                <a href="sample_user_edit.html">User edit</a>
+                            </li>                            
+                            <li class="active">
+                                <a href="sample_search.html">Search result</a>
+                            </li>       
+                            <li>
+                                <a href="sample_faq.html">FAQ</a>
+                            </li>               
+                            <li>
+                                <a href="sample_mailbox.html">Mailbox</a>
+                            </li>
+                            <li>
+                                <a href="sample_invoice.html">Invoice</a>
+                            </li>
+                            <li>
+                                <a href="sample_gallery.html">Gallery</a>
+                            </li>                            
+                            <li>
+                                <a href="sample_blank.html">Blank page</a>
+                            </li>
+                            <li>
+                                <a href="sample_price.html">Pricing table</a>
+                            </li>
+                            <li>
+                                <a href="sample_payment.html">Payment table</a>
+                            </li>                            
+                            <li class="openable">
+                                <a href="#">Error pages</a>
+                                <ul>
+                                    <li><a href="sample_error_403.html">Error 403 forbidden</a></li>
+                                    <li><a href="sample_error_404.html">Error 404 not found</a></li>
+                                    <li><a href="sample_error_503.html">Error 503 service unavailable</a></li>
+                                </ul>
+                            </li>                            
+                        </ul>
+                    </li>
+                    <li class="openable">
+                        <a href="#" class="icon"><span class="i-star text-info"></span>Navigation samples<span class="label label-danger fr">+6</span></a>
+                        <ul>
+                            <li><a href="#" class="icon"><span class="i-battery text-danger"></span>Second level<span class="label label-info fr">$35,224</span></a></li>                            
+                            <li class="openable">
+                                <a href="#" class="icon"><span class="i-cart text-success"></span>Second level<span class="label label-danger fr">+3</span></a>
+                                <ul>
+                                    <li><a href="#" class="icon"><span class="i-film"></span>Third level<span class="label label-info fr">3</span><span class="label label-success fr">2</span><span class="label fr">1</span></a></li>
+                                    <li class="active"><a href="#" class="icon"><span class="i-cube text-info"></span>Active third level<span class="label label-info fr">3</span><span class="label label-info fr">2</span><span class="label label-info fr">1</span></a></li>
+                                    <li><a href="#" class="icon"><span class="i-info"></span>Third level<span class="label label-warning fr">3</span><span class="label label-danger fr">2</span><span class="label fr">1</span></a></li>
+                                </ul>
+                            </li>                            
+                            <li><a href="#" class="icon"><span class="i-box text-warning"></span>Second level<span class="label label-success fr">$1989.02</span></a></li>
+                        </ul>
+                    </li>                    
+                </ul>
+
+            </div>
+
+            <div id="content">                        
+                <div class="wrap">
+                    
+                    <div class="head">
+                        <div class="info">
+                            <h1>Search Result</h1>
+                            <ul class="breadcrumb">
+                                <li><a href="#">Dashboard</a></li>
+                                <li><a href="#">Sample Pages</a></li>
+                                <li class="active">Search Result</li>
+                            </ul>
+                        </div>                                                
+                    </div>                                                                    
+                    
+                    <div class="container">
+
+                        <div class="row">
+                            
+                            <div class="col-md-12">
+                                
+                                <div class="block">
+                                    <div class="block_wrapper">
+                                        <div class="input-group">
+                                            <input type="text" value="Lorem ipsum dolor" class="form-control"/>
+                                            <div class="input-group-btn">
+                                                <button class="btn btn-default" type="button"><span class="i-cog"></span></button>
+                                                <button class="btn btn-default" type="button">Search</button>
+                                            </div>
+                                        </div>                                         
+                                    </div>
+                                </div>
+                                
+                            </div>
+                                
+                        </div>                        
+                        
+                        <div class="row">
+                            
+                            <div class="col-md-12">
+                                <div class="block">
+                                    <div class="head">
+                                        <h2>Search: Lorem ipsum dolor</h2>
+                                    </div>
+                                    <div class="toolbar">
+                                        <div class="side fl">Result: 236 items</div>
+                                        <div class="side fr">On page: 10 of 236</div>
+                                    </div>
+                                    <div class="content list_custom">
+                                        
+                                        <div class="item">
+                                            <div class="info">
+                                                <a href="#" class="name"> Lorem ipsum dolor</a>
+                                                <p><a href="#" class="text-danger">http://yourdomain.com/somepath</a></p>
+                                                <p><strong>Lorem ipsum dolor</strong> sit amet, consectetur adipiscing elit. Etiam volutpat varius quam eu vehicula. Curabitur laoreet ac felis sit amet interdum. Nullam ornare libero blandit facilisis mattis.</p>                                                
+                                                <p class="muted">Attachmet 1: somefile.exe</p>
+                                                <p class="muted">Attachmet 2: anotherfile.avi</p>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="info">
+                                                <a href="#" class="name">In non nisl urna</a>
+                                                <p><a href="#" class="text-danger">http://yourdomain.com/somepath</a></p>                                                
+                                                <p>Quisque euismod sollicitudin tortor. Maecenas vehicula sed orci eget faucibus. <strong>Lorem ipsum dolor</strong> Donec ipsum sem, consequat sit amet condimentum eget, volutpat ac leo.</p>                                                
+                                                <p class="muted">Attachmet: somefile.exe</p>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="info">
+                                                <a href="#" class="name">Mauris id volutpat eros</a>
+                                                <p><a href="#" class="text-danger">http://yourdomain.com/somepath</a></p>
+                                                <p>Pellentesque tempor placerat pulvinar. Sed et sollicitudin mi. Suspendisse suscipit lacinia mauris, in adipiscing felis molestie vitae. <strong>Lorem ipsum dolor</strong> etiam mattis elit eu dapibus condimentum. Suspendisse potenti. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>                                                                                                                                                
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="info">
+                                                <a href="#" class="name">Cras magna ligula, auctor</a>
+                                                <p><a href="#" class="text-danger">http://yourdomain.com/somepath</a></p>
+                                                <p>Quisque quis nulla ac velit tempor faucibus. Aenean accumsan eget urna lacinia posuere. <strong>Lorem ipsum dolor</strong> nulla porttitor odio id quam commodo dignissim.</p>                                                                                                
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="info">
+                                                <a href="#" class="name">Aenean neque lacus</a>
+                                                <p><a href="#" class="text-danger">http://yourdomain.com/somepath</a></p>
+                                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce volutpat suscipit mauris vitae congue. Class aptent taciti sociosqu <strong>Lorem ipsum dolor</strong> ad litora torquent per conubia nostra.</p>
+                                                <p class="muted">Attachmet: somearchive.zip</p>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="info">
+                                                <a href="#" class="name">Vivamus mattis bibendum</a>
+                                                <p><a href="#" class="text-danger">http://yourdomain.com/somepath</a></p>
+                                                <p>Nullam commodo scelerisque elementum. Integer quis mattis urna. Vestibulum aliquam tellus et dolor ullamcorper tincidunt. <strong>Lorem ipsum dolor</strong> etiam venenatis libero at sollicitudin facilisis. Integer vitae tempor elit.</p>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="info">
+                                                <a href="#" class="name">Fusce fermentum urna luctus</a>
+                                                <p><a href="#" class="text-danger">http://yourdomain.com/somepath</a></p>
+                                                <p>Morbi volutpat ante urna, vel scelerisque magna fermentum a. Aliquam nec accumsan purus. Class aptent taciti <strong>lorem ipsum dolor</strong> sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin nisi neque, hendrerit ac suscipit sed, elementum sed arcu.</p>                                                
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="info">
+                                                <a href="#" class="name">Vestibulum tincidunt</a>
+                                                <p><a href="#" class="text-danger">http://yourdomain.com/somepath</a></p>
+                                                <p>Etiam ut dui lacus. Cras ut ultrices urna. Integer pharetra, orci sit amet <strong>lorem ipsum dolor</strong> semper placerat, neque sapien consectetur massa, eget tristique tellus orci eget libero. Suspendisse potenti.</p>                                                
+                                                <p class="muted">Attachmet 1: someadoc.doc</p>
+                                                <p class="muted">Attachmet 2: someaxls.xls</p>
+                                                <p class="muted">Attachmet 3: someacsv.csv</p>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="info">
+                                                <a href="#" class="name">Nullam eu placerat leo</a>
+                                                <p><a href="#" class="text-danger">http://yourdomain.com/somepath</a></p>
+                                                <p>Nullam aliquam faucibus nunc, vel porttitor massa lobortis porta. Aliquam ornare suscipit est, <strong>lorem ipsum dolor</strong> at laoreet nunc tempor eget. Quisque elementum, dui nec semper consectetur, est elit adipiscing.</p>                                                
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="info">
+                                                <a href="#" class="name">Sed malesuada</a>
+                                                <p><a href="#" class="text-danger">http://yourdomain.com/somepath</a></p>
+                                                <p>Proin adipiscing nec magna ut tincidunt. Curabitur ac felis auctor, ultrices ante a, hendrerit enim. Integer ante est, tempor a accumsan nec, laoreet a felis. Etiam vestibulum varius ornare. <strong>Lorem ipsum dolor</strong> dapibus aliquet lectus.</p>                                                
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="info">
+                                                <a href="#" class="name">Vivamus quis risus faucibus</a>
+                                                <p><a href="#" class="text-danger">http://yourdomain.com/somepath</a></p>
+                                                <p>Vivamus in velit ullamcorper, malesuada sem dictum, vestibulum eros. Etiam non mi vehicula, mollis felis quis, ullamcorper tellus. Fusce iaculis vitae leo vitae suscipit. Integer tempor at nisi eget mollis. <strong>Lorem ipsum dolor</strong> ullamcorper lobortis dui in dapibus. Aliquam erat volutpat.</p>
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                    <div class="footer">
+                                        <div class="side fr">                                           
+                                            <ul class="pagination">
+                                                <li class="disabled"><a href="#">«</a></li>
+                                                <li class="active"><a href="#">1</a></li>
+                                                <li><a href="#">2</a></li>
+                                                <li><a href="#">3</a></li>                                                                                                        
+                                                <li class="disabled"><a href="#">...</a></li>
+                                                <li><a href="#">21</a></li>
+                                                <li><a href="#">22</a></li>
+                                                <li><a href="#">23</a></li>
+                                                <li><a href="#">»</a></li>
+                                            </ul>                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                        
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+    
+</body>
+</html>

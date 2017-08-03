@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>        
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />    
+    <!--[if gt IE 8]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />        
+    <![endif]-->                
+    <title>UI Elements - Leo - Premium Admin Template</title>
+    <link rel="icon" type="image/ico" href="favicon.ico"/>
+    
+    <link href="css/stylesheets.css" rel="stylesheet" type="text/css" />
+    
+    <!--[if lte IE 7]>
+        <script type='text/javascript' src='js/other/lte-ie7.js'></script>
+    <![endif]-->    
+    
+    <script type='text/javascript' src='js/jquery/jquery.min.js'></script>
+    <script type='text/javascript' src='js/jquery/jquery-ui-1.10.3.custom.min.js'></script>
+    <script type='text/javascript' src='js/jquery/jquery-migrate.min.js'></script>
+    <script type='text/javascript' src='js/jquery/globalize.js'></script>
+    
+    <script type='text/javascript' src='js/bootstrap/bootstrap.min.js'></script>
+    <script type='text/javascript' src='js/cookies/jquery.cookies.2.2.0.min.js'></script>
+    
+    <script type='text/javascript' src='js/noty/jquery.noty.js'></script>
+    <script type='text/javascript' src='js/noty/layouts/topCenter.js'></script>
+    <script type='text/javascript' src='js/noty/layouts/topLeft.js'></script>
+    <script type='text/javascript' src='js/noty/layouts/topRight.js'></script>    
+    <script type='text/javascript' src='js/noty/themes/default.js'></script>
+    
+    <script type='text/javascript' src='js/scrollup/jquery.scrollUp.min.js'></script>
+    
+    <script type='text/javascript' src='js/plugins.js'></script>    
+    <script type='text/javascript' src='js/actions.js'></script>
+</head>
+<body>    
+    
+    <div id="wrapper">
+        
+        <div id="header">
+            
+            <div class="wrap">
+                
+                <a href="index.html" class="logo"></a>
+                
+                <div class="buttons fl">
+                    <div class="item">
+                        <a href="#" class="btn btn-primary btn-sm c_layout">
+                            <span class="i-layout-8"></span>                            
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="btn btn-primary btn-sm c_screen">
+                            <span class="i-stretch"></span>                            
+                        </a>
+                    </div>                    
+                </div>
+                
+                <div class="buttons">
+                    <div class="item">
+                        <a href="#" class="btn btn-primary btn-sm">
+                            <span class="i-cog"></span>
+                        </a>
+                        <div class="popup">
+                            <div class="head">
+                                <h2>Settings</h2>
+                            </div>
+                            <div class="content np">      
+                                <div class="row">
+                                    <div class="controls-row">
+                                        <div class="col-md-3">Themes:</div>
+                                        <div class="col-md-9 themes">
+                                            <a href="#" class="default tip" data-theme="" title="Default"></a>
+                                            <a href="#" class="dark tip" data-theme="themeDark" title="Dark"></a>
+                                            <a href="#" class="simple tip" data-theme="themeSimple" title="Simple"></a>
+                                            <div class="help-block">On click theme will changed and saved settings</div>
+                                        </div>
+                                    </div>               
+                                    <div class="controls-row">
+                                        <div class="col-md-3">Backgrounds:</div>
+                                        <div class="col-md-9 backgrounds">
+                                            <a href="#" class="default tip" data-theme="" title="Default"></a>                                            
+                                            <a href="#" class="b_bcrosshatch" data-back="b_bcrosshatch"></a>
+                                            <a href="#" class="b_crosshatch" data-back="b_crosshatch"></a>
+                                            <a href="#" class="b_cube" data-back="b_cube"></a>
+                                            <a href="#" class="b_dots" data-back="b_dots"></a>
+                                            <a href="#" class="b_grid" data-back="b_grid"></a>
+                                            <a href="#" class="b_hline" data-back="b_hline"></a>
+                                            <a href="#" class="b_simple" data-back="b_simple"></a>
+                                            <a href="#" class="b_vline" data-back="b_vline"></a>
+                                            <div class="help-block">On click background will changed and saved settings</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <div class="side fr">
+                                    <button class="btn btn-primary popup-close">Close</button>
+                                </div>                                
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="item">
+                        <a href="#" class="btn btn-primary btn-sm">
+                            <span class="i-chat"></span>
+                        </a>
+                        <div class="popup">
+                            <div class="head">
+                                <h2>Messages</h2>
+                            </div>
+                            <div class="content npb messages minify" id="messages"></div>
+                            <div class="footer">
+                                <div class="side fl">
+                                    <button class="btn btn-link">Show all</button>
+                                </div>
+                                <div class="side fr">
+                                    <button class="btn btn-primary popup-close">Close</button>
+                                </div>                                
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="item">                        
+                        <div class="btn-group">                        
+                            <a href="#" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
+                                <span class="i-forward"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><span class="i-profile"></span> Profile</a></li>
+                                <li><a href="#"><span class="i-tools"></span> Controls</a></li>                                
+                                <li><a href="#"><span class="i-locked"></span> Lock</a></li>
+                                <li><a href="#"><span class="i-forward"></span> Logout</a></li>
+                            </ul> 
+                        </div>
+                    </div>                
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div id="layout">
+        
+            <div id="sidebar">
+
+                <div class="user">
+                    <div class="pic">
+                        <img src="img/examples/users/dmitry_m.jpg"/>
+                    </div>
+                    <div class="info">
+                        <div class="name">
+                            <a href="#">John Doe</a>
+                        </div>
+                        <div class="buttons">
+                            <a href="#"><span class="i-cog"></span> Settings</a>
+                            <a href="#"><span class="i-chat"></span> Messages</a>
+                            <a href="#" class="fr"><span class="i-forward"></span> Logout</a>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="navigation">
+                    <li>
+                        <a href="index.html">Dashboard</a>
+                    </li>
+                    <li class="openable open">
+                        <a href="#">UI Elements</a>
+                        <ul>
+                            <li class="active">
+                                <a href="ui_elements.html">Elements</a>
+                            </li>
+                            <li>
+                                <a href="ui_widgets.html">Widgets</a>
+                            </li>
+                            <li>
+                                <a href="ui_buttons.html">Buttons</a>
+                            </li>
+                            <li>
+                                <a href="ui_icons.html">Icons</a>
+                            </li>
+                            <li>
+                                <a href="ui_grid.html">Grid system</a>
+                            </li>                        
+                        </ul>
+                    </li> 
+                    <li class="openable">
+                        <a href="#">Form Stuff</a>
+                        <ul>
+                            <li>
+                                <a href="form_elements.html">Form elements</a>
+                            </li>                            
+                            <li>
+                                <a href="form_validation.html">Form validation</a>
+                            </li>                                                        
+                            <li>
+                                <a href="form_wizard.html">Wizard</a>
+                            </li>
+                            <li>
+                                <a href="form_wysiwyg.html">WYSIWYG</a>
+                            </li>
+                            <li>
+                                <a href="form_code_editor.html">Code editor</a>
+                            </li>
+                        </ul>                        
+                    </li>                
+                    <li>
+                        <a href="messages.html">Messages</a>
+                    </li>                                
+                    <li>
+                        <a href="charts.html">Charts</a>
+                    </li>                                   
+                    <li class="openable">                        
+                        <a href="tables.html">Tables</a>
+                        <ul>
+                            <li>
+                                <a href="tables_default.html">Default tables</a>
+                            </li>
+                            <li>
+                                <a href="tables_sort.html">Sorting tables</a>
+                            </li>
+                            <li>
+                                <a href="tables_edit.html">Editable tables</a>
+                            </li>
+                        </ul>
+                    </li>                        
+                    <li>
+                        <a href="typography.html">Typography</a>                       
+                    </li>
+                    <li>
+                        <a href="files.html">File handling</a>                       
+                    </li>
+                    <li>
+                        <a href="calendar.html">Calendar</a>                       
+                    </li>                    
+                    <li class="openable">
+                        <a href="#">Maps</a>
+                        <ul>
+                            <li>
+                                <a href="maps_vector.html">Vector maps</a>
+                            </li>
+                            <li>
+                                <a href="maps_google.html">Google maps</a>
+                            </li>                            
+                        </ul>
+                    </li>                    
+                    <li class="openable">
+                        <a href="#">Sample Pages</a>
+                        <ul>
+                            <li>
+                                <a href="sample_login.html">Login</a>
+                            </li>     
+                            <li>
+                                <a href="sample_user_edit.html">User edit</a>
+                            </li>                    
+                            <li>
+                                <a href="sample_search.html">Search result</a>
+                            </li>                     
+                            <li>
+                                <a href="sample_faq.html">FAQ</a>
+                            </li>                   
+                            <li>
+                                <a href="sample_mailbox.html">Mailbox</a>
+                            </li>
+                            <li>
+                                <a href="sample_invoice.html">Invoice</a>
+                            </li>
+                            <li>
+                                <a href="sample_gallery.html">Gallery</a>
+                            </li>                            
+                            <li>
+                                <a href="sample_blank.html">Blank page</a>
+                            </li>     
+                            <li>
+                                <a href="sample_price.html">Pricing table</a>
+                            </li>
+                            <li>
+                                <a href="sample_payment.html">Payment table</a>
+                            </li>                            
+                            <li class="openable">
+                                <a href="#">Error pages</a>
+                                <ul>
+                                    <li><a href="sample_error_403.html">Error 403 forbidden</a></li>
+                                    <li><a href="sample_error_404.html">Error 404 not found</a></li>
+                                    <li><a href="sample_error_503.html">Error 503 service unavailable</a></li>
+                                </ul>
+                            </li>                            
+                        </ul>
+                    </li>
+                    <li class="openable">
+                        <a href="#" class="icon"><span class="i-star text-info"></span>Navigation samples<span class="label label-danger fr">+6</span></a>
+                        <ul>
+                            <li><a href="#" class="icon"><span class="i-battery text-danger"></span>Second level<span class="label label-info fr">$35,224</span></a></li>                            
+                            <li class="openable">
+                                <a href="#" class="icon"><span class="i-cart text-success"></span>Second level<span class="label label-danger fr">+3</span></a>
+                                <ul>
+                                    <li><a href="#" class="icon"><span class="i-film"></span>Third level<span class="label label-info fr">3</span><span class="label label-success fr">2</span><span class="label fr">1</span></a></li>
+                                    <li class="active"><a href="#" class="icon"><span class="i-cube text-info"></span>Active third level<span class="label label-info fr">3</span><span class="label label-info fr">2</span><span class="label label-info fr">1</span></a></li>
+                                    <li><a href="#" class="icon"><span class="i-info"></span>Third level<span class="label label-warning fr">3</span><span class="label label-danger fr">2</span><span class="label fr">1</span></a></li>
+                                </ul>
+                            </li>                            
+                            <li><a href="#" class="icon"><span class="i-box text-warning"></span>Second level<span class="label label-success fr">$1989.02</span></a></li>
+                        </ul>
+                    </li>                      
+                </ul>
+
+            </div>
+
+            <div id="content">  
+                
+                <div class="wrap">
+                    
+                    
+                    <div class="head">
+                        <div class="info">
+                            <h1>UI Elements</h1>
+                            <ul class="breadcrumb">
+                                <li><a href="#">Dashboard</a></li>
+                                <li><a href="#">UI</a></li>
+                                <li class="active">UI elements</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="search">
+                            <form action="" method="post">
+                                <input type="text" class="form-control" placeholder="search..."/>                                
+                                <button type="submit"><span class="i-calendar"></span></button>
+                                <button type="submit"><span class="i-magnifier"></span></button>
+                            </form>
+                        </div>                        
+                    </div>                                                                    
+                    
+                    <div class="container">
+                                                
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <div class="alert alert-warning">                
+                                    <strong>Warning!</strong> Best check yo self, you're not... Also, you can click me!:P
+                                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                </div>
+                                <div class="alert alert-danger">            
+                                    <strong>Oh snap!</strong> Change a few things up and try submitting again... 
+                                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                </div>
+                                <div class="alert alert-success">            
+                                    <strong>Well done!</strong> You successfully read this important alert message...
+                                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                </div>            
+                                <div class="alert alert-info">            
+                                    <strong>Heads up!</strong> This alert needs your attention, but it's not super important...
+                                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                </div>            
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="block">
+                                    <div class="head">
+                                        <h2>Alerts inside block</h2>
+                                    </div>                  
+                                    <div class="content">
+
+                                        <div class="alert alert-warning">                
+                                            <strong>Warning!</strong> Best check yo self, you're not... Also, you can click me!:P
+                                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                        </div>
+                                        <div class="alert alert-danger">            
+                                            <strong>Oh snap!</strong> Change a few things up and try submitting again... 
+                                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                        </div>
+                                        <div class="alert alert-success">            
+                                            <strong>Well done!</strong> You successfully read this important alert message...
+                                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                        </div>            
+                                        <div class="alert alert-info">            
+                                            <strong>Heads up!</strong> This alert needs your attention, but it's not super important...
+                                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                        </div>                        
+
+                                    </div>
+                                </div>                
+                            </div>
+                        </div>                                                
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="block">
+                                    <div class="head">
+                                        <h2>Accordion</h2>
+                                    </div>                  
+                                    <div class="content accordion">
+
+                                        <h3>Section 1</h3>
+                                        <div>
+                                            <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+                                        </div>
+
+                                        <h3>Section 2</h3>
+                                        <div>
+                                            <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna.</p>
+                                        </div>
+
+                                        <h3>Section 3</h3>
+                                        <div>
+                                            <ul>
+                                                <li>List item one</li>
+                                                <li>List item two</li>
+                                                <li>List item three</li>
+                                            </ul>                                
+                                            <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.</p>
+                                        </div>
+
+                                        <h3>Section 4</h3>
+                                        <div>
+                                            <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est.</p>
+                                            <p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                                        </div>                            
+
+                                    </div>
+                                </div>                
+                            </div>
+                        </div>                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="block">
+                                    <div class="head">
+                                        <h2>Sortable</h2>
+                                    </div>                  
+                                    <div class="content np">
+                                        <ul class="list sortable" id="sortable">
+                                            <li>Pellentesque habitant morbi</li>
+                                            <li>Vestibulum ante ipsum</li>
+                                            <li>Faucibus orci luctus</li>
+                                            <li>Nullam ut libero</li>
+                                            <li>Integer dignissim consequat</li>
+                                            <li>Class aptent taciti</li>
+                                            <li>Sed commodo magna quis</li>
+                                        </ul>
+                                    </div>
+                                </div>                
+                            </div>
+                            <div class="col-md-6">
+                                <div class="block">
+                                    <div class="head">
+                                        <h2>Selectable</h2>
+                                    </div>                  
+                                    <div class="content np">
+                                        <ul class="list_simple selectable" id="selectable">
+                                            <li>Pellentesque habitant morbi</li>
+                                            <li>Vestibulum ante ipsum</li>
+                                            <li>Faucibus orci luctus</li>
+                                            <li>Nullam ut libero</li>
+                                            <li>Integer dignissim consequat</li>
+                                            <li>Class aptent taciti</li>
+                                            <li>Sed commodo magna quis</li>
+                                        </ul>
+                                    </div>
+                                </div>                
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="block">
+                                    <div class="head">
+                                        <h2>Progressbars</h2>
+                                        <div class="side fr" style="width: 100px;">
+                                            <div class="progress progress-small">
+                                                <div class="progress-bar progress-bar-danger tip" title="80%" style="width: 80%"></div>
+                                            </div>                                            
+                                        </div>
+                                    </div>                  
+                                    <div class="content np">
+                                        <div class="controls-row">
+                                            <div class="col-md-3">Bootstrap basic:</div>
+                                            <div class="col-md-9">
+                                                <div class="progress">
+                                                    <div class="progress-bar progress-bar-info tip" title="20%" style="width: 20%"></div>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar progress-bar-success tip" title="40%" style="width: 40%"></div>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar progress-bar-warning tip" title="60%" style="width: 60%"></div>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar progress-bar-danger tip" title="80%" style="width: 80%"></div>
+                                                </div>                                                
+                                            </div>
+                                        </div>
+                                        <div class="controls-row">
+                                            <div class="col-md-3">Bootstrap striped:</div>
+                                            <div class="col-md-9">
+                                                <div class="progress progress-striped">
+                                                    <div class="progress-bar progress-bar-info tip" title="60%" style="width: 60%"></div>
+                                                </div>                                                
+                                            </div>
+                                        </div>                                         
+                                        <div class="controls-row">
+                                            <div class="col-md-3">Bootstrap active:</div>
+                                            <div class="col-md-9">
+                                                <div class="progress progress-striped active">
+                                                    <div class="progress-bar progress-bar-info tip" title="60%" style="width: 60%"></div>
+                                                </div>                                                
+                                            </div>
+                                        </div>
+                                        <div class="controls-row">
+                                            <div class="col-md-3">Bootstrap sizing:</div>
+                                            <div class="col-md-9">
+                                                <div class="progress progress-small">
+                                                    <div class="progress-bar progress-bar-info tip" title="20%" style="width: 20%"></div>
+                                                </div>
+                                                <div class="progress progress-small">
+                                                    <div class="progress-bar progress-bar-success tip" title="40%" style="width: 40%"></div>
+                                                </div>
+                                                <div class="progress progress-small">
+                                                    <div class="progress-bar progress-bar-warning tip" title="60%" style="width: 60%"></div>
+                                                </div>
+                                                <div class="progress progress-small">
+                                                    <div class="progress-bar progress-bar-danger tip" title="80%" style="width: 80%"></div>
+                                                </div>                                                
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                </div>                
+                            </div>
+                        </div>                        
+                        
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="block">
+                                    <div class="head">
+                                        <h2>Sliders</h2>
+                                        <div class="side fr" style="width: 100px;">
+                                            <div id="slider_head"></div>
+                                        </div>
+                                    </div>                  
+                                    <div class="content np">
+                                        <div class="controls-row">
+                                            <div class="col-md-3">Default:</div>
+                                            <div class="col-md-9">
+                                                <div id="slider"></div>                                                
+                                            </div>
+                                        </div>
+                                        <div class="controls-row">
+                                            <div class="col-md-3">Range:</div>
+                                            <div class="col-md-9">                                                
+                                                <div id="slider_range"></div>
+                                                <span class="help-block" id="slider_range_amount"></span>
+                                            </div>
+                                        </div>                                                                                                                      
+                                    </div>
+                                </div>                
+                            </div>
+                        </div>                         
+                        
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="block">
+                                    <div class="head">
+                                        <h2>jQuery tabs</h2>
+                                    </div>                  
+                                    <div class="content np tabs">
+
+                                        <ul>
+                                            <li><a href="#tabs-1">Tab 1</a></li>
+                                            <li><a href="#tabs-2">Tab 2</a></li>
+                                            <li><a href="#tabs-3">Tab 3</a></li>
+                                        </ul>                        
+
+                                        <div id="tabs-1">
+                                            <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+                                            <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna.</p>
+                                        </div>                        
+
+                                        <div id="tabs-2">
+                                            <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna.</p>
+                                        </div>
+
+                                        <div id="tabs-3">
+                                            <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.</p>
+                                            <ul>
+                                                <li>List item one</li>
+                                                <li>List item two</li>
+                                                <li>List item three</li>
+                                            </ul>
+                                        </div>    
+                                                                             
+                                    </div>
+                                </div>                
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="block">
+                                    <div class="head">
+                                        <h2>jQuery tabs in head</h2>
+                                    </div>                  
+                                    <div class="content tabs tabs-head">
+
+                                        <ul>
+                                            <li><a href="#tabsh-1">Tab 1</a></li>
+                                            <li><a href="#tabsh-2">Tab 2</a></li>
+                                            <li><a href="#tabsh-3">Tab 3</a></li>
+                                        </ul>                        
+
+                                        <div id="tabsh-1">
+                                            <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+                                            <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna.</p>
+                                        </div>                        
+
+                                        <div id="tabsh-2">
+                                            <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna.</p>
+                                        </div>
+
+                                        <div id="tabsh-3">
+                                            <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.</p>
+                                            <ul>
+                                                <li>List item one</li>
+                                                <li>List item two</li>
+                                                <li>List item three</li>
+                                            </ul>
+                                        </div>    
+                                                                             
+                                    </div>
+                                </div>                
+                            </div>                            
+                            <div class="col-md-6">
+                                <div class="block">  
+                                    <div class="content tabs tabs-whead np">
+                                        <ul>
+                                            <li><a href="#tabswh-1">Tab 1</a></li>
+                                            <li><a href="#tabswh-2">Tab 2</a></li>
+                                            <li><a href="#tabswh-3">Tab 3</a></li>
+                                        </ul>                        
+                                        <div id="tabswh-1">
+                                            <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+                                            <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna.</p>
+                                        </div>                        
+
+                                        <div id="tabswh-2">
+                                            <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna.</p>
+                                        </div>
+
+                                        <div id="tabswh-3">
+                                            <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.</p>
+                                            <ul>
+                                                <li>List item one</li>
+                                                <li>List item two</li>
+                                                <li>List item three</li>
+                                            </ul>
+                                        </div>    
+                                                                             
+                                    </div>
+                                </div>                
+                            </div>                            
+                        </div>                        
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="block">
+                                    <div class="head">
+                                        <h2>Bootstrap tabs</h2>
+                                    </div>                  
+                                    <div class="content tabable np">
+    
+                                        <ul class="nav nav-tabs">
+                                            <li class="active"><a href="#btab-1" data-toggle="tab">Tab 1</a></li>
+                                            <li><a href="#btab-2" data-toggle="tab">Tab 2</a></li>
+                                            <li><a href="#btab-3" data-toggle="tab">Tab 3</a></li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div class="tab-pane active" id="btab-1">
+                                                <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+                                                <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna.</p>
+                                            </div>
+                                            <div class="tab-pane" id="btab-2">
+                                                <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna.</p>
+                                            </div>
+                                            <div class="tab-pane" id="btab-3">
+                                                <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.</p>
+                                                <ul>
+                                                    <li>List item one</li>
+                                                    <li>List item two</li>
+                                                    <li>List item three</li>
+                                                </ul>
+                                            </div>                                             
+                                        </div>
+                                                                             
+                                    </div>
+                                </div>                
+                            </div>
+                        </div>                         
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="block">
+                                    <div class="head">
+                                        <h2>Bootstrap tabs in head</h2>
+                                    </div>                  
+                                    <div class="content tabable tabable-head np">    
+                                        <ul class="nav nav-tabs">
+                                            <li class="active"><a href="#btabh-1" data-toggle="tab">Tab 1</a></li>
+                                            <li><a href="#btabh-2" data-toggle="tab">Tab 2</a></li>
+                                            <li><a href="#btabh-3" data-toggle="tab">Tab 3</a></li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div class="tab-pane active" id="btabh-1">
+                                                <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+                                                <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna.</p>
+                                            </div>
+                                            <div class="tab-pane" id="btabh-2">
+                                                <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna.</p>
+                                            </div>
+                                            <div class="tab-pane" id="btabh-3">
+                                                <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.</p>
+                                                <ul>
+                                                    <li>List item one</li>
+                                                    <li>List item two</li>
+                                                    <li>List item three</li>
+                                                </ul>
+                                            </div>                                             
+                                        </div>
+                                                                             
+                                    </div>
+                                </div>                
+                            </div>
+                            <div class="col-md-6">
+                                <div class="block">
+                                    <div class="content tabable tabable-whead np">    
+                                        <ul class="nav nav-tabs">
+                                            <li class="active"><a href="#btabwh-1" data-toggle="tab">Tab 1</a></li>
+                                            <li><a href="#btabwh-2" data-toggle="tab">Tab 2</a></li>
+                                            <li><a href="#btabwh-3" data-toggle="tab">Tab 3</a></li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div class="tab-pane active" id="btabwh-1">
+                                                <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+                                                <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna.</p>
+                                            </div>
+                                            <div class="tab-pane" id="btabwh-2">
+                                                <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna.</p>
+                                            </div>
+                                            <div class="tab-pane" id="btabwh-3">
+                                                <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.</p>
+                                                <ul>
+                                                    <li>List item one</li>
+                                                    <li>List item two</li>
+                                                    <li>List item three</li>
+                                                </ul>
+                                            </div>                                             
+                                        </div>
+                                                                             
+                                    </div>
+                                </div>                
+                            </div>                            
+                        </div>                        
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="block">
+                                    <div class="head">
+                                        <h2>Tooltips</h2>
+                                    </div>
+                                    <div class="content">
+                                        <button class="btn btn-default tip" title="Default tip">Default tip</button> 
+                                        <button class="btn btn-default tipb" title="Bottom tip">Bottom tip</button> 
+                                        <button class="btn btn-default tipl" title="Left tip">Left tip</button> 
+                                        <button class="btn btn-default tipr" title="Right tip">Right tip</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="block">
+                                    <div class="head">
+                                        <h2>Popovers</h2>
+                                    </div>
+                                    <div class="content">
+                                        <button class="btn btn-default" id="popover_top">Top</button> 
+                                        <button class="btn btn-default" id="popover_right">Right</button> 
+                                        <button class="btn btn-default" id="popover_bottom">Bottom</button> 
+                                        <button class="btn btn-default" id="popover_left">Left</button>                    
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="block">
+                                    <div class="head">
+                                        <h2>jQuery dialog</h2>
+                                    </div>
+                                    <div class="content">
+                                        <button class="btn btn-default" id="jDialog_default_button">Default dialog</button> 
+                                        <button class="btn btn-default" id="jDialog_modal_button">Modal dialog</button> 
+                                        <button class="btn btn-default" id="jDialog_form_button">Form dialog</button>                                             
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="block">
+                                    <div class="head">
+                                        <h2>Bootstrap modal</h2>
+                                    </div>
+                                    <div class="content">
+                                        <a href="#dModal" role="button" class="btn btn-default" data-toggle="modal">Default dialog</a> 
+                                        <a href="#bModal" role="button" class="btn btn-default" data-toggle="modal">Modal dialog</a>
+                                        <a href="#fModal" role="button" class="btn btn-default" data-toggle="modal">Form dialog</a>                    
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>                        
+                        
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="block">
+                                    <div class="head">
+                                        <h2>Noty</h2>
+                                        <div class="side fr">
+                                            <button class="btn btn-primary" onClick="$.noty.closeAll();">Close all</button>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="alert alert-info">
+                                            <strong>Atention!</strong> In this plugin available lot of directions of notices(check documentation).
+                                            <button type="button" class="close" data-dismiss="alert">×</button>
+                                        </div>
+                                        <script type="text/javascript">                                            
+                                            function notyConfirm(){
+                                                noty({
+                                                text: 'Do you want to continue?',
+                                                type: 'information',
+                                                buttons: [
+                                                        {addClass: 'btn btn-primary', text: 'Ok', onClick: function($noty) {
+                                                            $noty.close();
+                                                            noty({text: 'You clicked "Ok" button', type: 'success'});
+                                                        }
+                                                        },
+                                                        {addClass: 'btn btn-danger', text: 'Cancel', onClick: function($noty) {
+                                                            $noty.close();
+                                                            noty({text: 'You clicked "Cancel" button', type: 'error'});
+                                                        }
+                                                        }
+                                                    ]
+                                                })                                                    
+                                            }                                            
+                                        </script>                                        
+                                        <div class="btn-group">
+                                            <button class="btn btn-default" onClick="noty({text: 'Left top notify', layout: 'topLeft'});">Left top</button> 
+                                            <button class="btn btn-default" onClick="noty({text: 'Center top notify', layout: 'topCenter'});">Center top</button> 
+                                            <button class="btn btn-default" onClick="noty({text: 'Right top notify'});">Right top</button> 
+                                        </div>
+                                        <div class="btn-group">                                            
+                                            <button class="btn btn-default" onClick="noty({text: 'Successful action', type: 'success'});">Success</button> 
+                                            <button class="btn btn-default" onClick="noty({text: 'There was an error', type: 'error'});">Error</button> 
+                                            <button class="btn btn-default" onClick="noty({text: 'Best check yo self', type: 'warning'});">Warning</button> 
+                                            <button class="btn btn-default" onClick="noty({text: 'This alert needs your attention', type: 'information'});">Warning</button>
+                                            <button class="btn btn-default" onClick="notyConfirm();">Confirm</button>                                            
+                                        </div>                                                                                
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="block ns">
+                                    <ul class="nav nav-pills nav-stacked">
+                                        <li class="active"><a href="#">Stacked pills</a></li>
+                                        <li><a href="#">Home</a></li>                                    
+                                        <li><a href="#">Profile</a></li>
+                                        <li><a href="#">Messages</a></li>                                    
+                                        <li><a href="#">Settings</a></li>
+                                    </ul> 
+                                </div>
+                            </div>
+                            <div class="col-md-6">                                                                    
+                                <div class="block ns">
+                                    <div class="list-group">
+                                        <a href="#" class="list-group-item">List group</a>
+                                        <a href="#" class="list-group-item">Home</a>
+                                        <a href="#" class="list-group-item">Profile</a>
+                                        <a href="#" class="list-group-item">Messages</a>
+                                        <a href="#" class="list-group-item">Settings</a>
+                                    </div>                                                                                   
+                                </div>
+                            </div>                            
+                        </div>                         
+                        
+                        <div class="row">
+                            <div class="col-md-12">
+                                
+                                <div class="block">
+                                    <div class="head">
+                                        <h2>Lables and badges</h2>
+                                        <div class="side fr">
+                                            <span class="label label-danger">Hi, i'm label</span>
+                                        </div>
+                                    </div>
+                                    <div class="content np">
+                                        <div class="controls-row">
+                                            <div class="col-md-3">Labels:</div>
+                                            <div class="col-md-9">
+                                                <span class="label">Default</span>
+                                                <span class="label label-success">Success</span>
+                                                <span class="label label-danger">Danger</span>
+                                                <span class="label label-warning">Warning</span>
+                                                <span class="label label-info">Info</span>
+                                                <span class="label label-inverse">Inverse</span>                                                                                                                                             
+                                            </div>                                            
+                                        </div>
+                                        <div class="controls-row">
+                                            <div class="col-md-3">Badges:</div>
+                                            <div class="col-md-9">
+                                                <span class="badge">1</span>
+                                                <span class="badge badge-success">2</span>
+                                                <span class="badge badge-warning">4</span>
+                                                <span class="badge badge-danger">6</span>
+                                                <span class="badge badge-info">8</span>
+                                                <span class="badge badge-inverse">10</span>
+                                            </div>                                            
+                                        </div>                                        
+                                    </div>
+                                    <div class="footer">
+                                        <div class="side fl">
+                                            <span class="badge badge-info">5</span>
+                                        </div>                                        
+                                        <div class="side fr">
+                                            <span class="label label-danger">Hi, i'm label</span>
+                                        </div>                                        
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>                                                 
+                        
+                    </div>                    
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+
+    </div>
+    
+    <!-- jQuery default dialog -->
+    <div class="dialog" id="jDialog_default" style="display: none;" title="Default dialog">
+        <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna.</p>
+    </div>
+    <!-- EOF jQuery default dialog -->
+    
+    <!-- jQuery modal dialog -->
+    <div class="dialog" id="jDialog_modal" style="display: none;" title="Modal dialog">
+        <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna.</p>                
+    </div>     
+    <!-- EOF jQuery modal dialog -->
+    
+    <!-- jQuery dialog form -->
+    <div class="dialog-fluid" id="jDialog_form" style="display: none;" title="Modal form">
+        <div class="row">
+            <div class="block np">
+                <div class="controls-row">
+                    <div class="col-md-3">
+                        First name:
+                    </div>
+                    <div class="col-md-9">
+                        <input type="text" name="fname" value="" class="form-control"/>                        
+                    </div>
+                </div>
+                <div class="controls-row">
+                    <div class="col-md-3">
+                        Last name:
+                    </div>
+                    <div class="col-md-9">
+                        <input type="text" name="lname" value="" class="form-control"/>
+                    </div>
+                </div>
+                <div class="controls-row">
+                    <div class="col-md-3">
+                        Country:
+                    </div>
+                    <div class="col-md-9">                        
+                        <input type="text" name="lname" value="" class="form-control"/>
+                    </div>
+                </div>                
+                <div class="controls-row">
+                    <div class="col-md-3">
+                        About:
+                    </div>
+                    <div class="col-md-9">                        
+                        <textarea class="form-control"></textarea>
+                    </div>
+                </div>                           
+            </div>
+        </div>
+    </div>
+    <!-- EOF jQuery dialog form -->
+    
+    <!-- Bootrstrap default dialog -->    
+    <div class="modal fade" id="dModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3 class="modal-title" id="myModalLabel">Default</h3>
+                </div>
+                <div class="modal-body">
+                    <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna.</p>
+                </div>
+            </div>
+        </div>
+    </div>   
+    
+    
+    <!-- EOF Bootrstrap default dialog -->
+    <!-- Bootrstrap modal -->    
+    <div class="modal fade" id="bModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3 class="modal-title" id="myModalLabel2">Modal</h3>
+                </div>
+                <div class="modal-body">
+                    <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna.</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-warning" data-dismiss="modal" aria-hidden="true">Save updates</button> 
+                    <button class="btn btn-default" data-dismiss="modal" aria-hidden="true">Close</button>            
+                </div>                
+            </div>
+        </div>
+    </div>    
+    
+    <!-- EOF Bootrstrap modal -->
+    <!-- Bootrstrap modal form -->
+    <div class="modal fade" id="fModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3 class="modal-title" id="myModalLabel3">Modal form</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="block np">
+                            <div class="controls-row">
+                                <div class="col-md-3">
+                                    First name:
+                                </div>
+                                <div class="col-md-9">
+                                    <input type="text" name="fname" value="" class="form-control"/>                        
+                                </div>
+                            </div>
+                            <div class="controls-row">
+                                <div class="col-md-3">
+                                    Last name:
+                                </div>
+                                <div class="col-md-9">
+                                    <input type="text" name="lname" value="" class="form-control"/>
+                                </div>
+                            </div>
+                            <div class="controls-row">
+                                <div class="col-md-3">
+                                    Country:
+                                </div>
+                                <div class="col-md-9">                        
+                                    <input type="text" name="lname" value="" class="form-control"/>
+                                </div>
+                            </div>                
+                            <div class="controls-row">
+                                <div class="col-md-3">
+                                    About:
+                                </div>
+                                <div class="col-md-9">                        
+                                    <textarea class="form-control"></textarea>
+                                </div>
+                            </div>                           
+                        </div>
+                    </div>                    
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-warning" data-dismiss="modal" aria-hidden="true">Save updates</button> 
+                    <button class="btn btn-default" data-dismiss="modal" aria-hidden="true">Close</button>            
+                </div>                
+            </div>
+        </div>
+    </div>    
+    <!-- EOF Bootrstrap modal form -->
+    
+</body>
+</html>

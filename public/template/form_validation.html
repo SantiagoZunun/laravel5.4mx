@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>        
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />    
+    <!--[if gt IE 8]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />        
+    <![endif]-->                
+    <title>Form validation - Leo - Premium Admin Template</title>
+    <link rel="icon" type="image/ico" href="favicon.ico"/>
+    
+    <link href="css/stylesheets.css" rel="stylesheet" type="text/css" />
+    
+    <!--[if lte IE 7]>
+        <script type='text/javascript' src='js/other/lte-ie7.js'></script>
+    <![endif]-->    
+    
+    <script type='text/javascript' src='js/jquery/jquery.min.js'></script>
+    <script type='text/javascript' src='js/jquery/jquery-ui-1.10.3.custom.min.js'></script>
+    <script type='text/javascript' src='js/jquery/jquery-migrate.min.js'></script>
+    <script type='text/javascript' src='js/jquery/globalize.js'></script>
+    
+    <script type='text/javascript' src='js/bootstrap/bootstrap.min.js'></script>
+    <script type='text/javascript' src='js/cookies/jquery.cookies.2.2.0.min.js'></script>
+    
+    <script type='text/javascript' src='js/validationengine/languages/jquery.validationEngine-en.js'></script>
+    <script type='text/javascript' src='js/validationengine/jquery.validationEngine.js'></script>
+    <script type='text/javascript' src='js/maskedinput/jquery.maskedinput.min.js'></script>
+    
+    <script type='text/javascript' src='js/scrollup/jquery.scrollUp.min.js'></script>
+    
+    <script type='text/javascript' src='js/plugins.js'></script>    
+    <script type='text/javascript' src='js/actions.js'></script>
+</head>
+<body>    
+    
+    <div id="wrapper">
+        
+        <div id="header">
+            
+            <div class="wrap">
+                
+                <a href="index.html" class="logo"></a>
+                
+                <div class="buttons fl">
+                    <div class="item">
+                        <a href="#" class="btn btn-primary btn-sm c_layout">
+                            <span class="i-layout-8"></span>                            
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="btn btn-primary btn-sm c_screen">
+                            <span class="i-stretch"></span>                            
+                        </a>
+                    </div>                    
+                </div>
+                
+                <div class="buttons">
+                    <div class="item">
+                        <a href="#" class="btn btn-primary btn-sm">
+                            <span class="i-cog"></span>
+                        </a>
+                        <div class="popup">
+                            <div class="head">
+                                <h2>Settings</h2>
+                            </div>
+                            <div class="content np">      
+                                <div class="row">
+                                    <div class="controls-row">
+                                        <div class="col-md-3">Themes:</div>
+                                        <div class="col-md-9 themes">
+                                            <a href="#" class="default tip" data-theme="" title="Default"></a>
+                                            <a href="#" class="dark tip" data-theme="themeDark" title="Dark"></a>
+                                            <a href="#" class="simple tip" data-theme="themeSimple" title="Simple"></a>
+                                            <div class="help-block">On click theme will changed and saved settings</div>
+                                        </div>
+                                    </div>               
+                                    <div class="controls-row">
+                                        <div class="col-md-3">Backgrounds:</div>
+                                        <div class="col-md-9 backgrounds">
+                                            <a href="#" class="default tip" data-theme="" title="Default"></a>                                            
+                                            <a href="#" class="b_bcrosshatch" data-back="b_bcrosshatch"></a>
+                                            <a href="#" class="b_crosshatch" data-back="b_crosshatch"></a>
+                                            <a href="#" class="b_cube" data-back="b_cube"></a>
+                                            <a href="#" class="b_dots" data-back="b_dots"></a>
+                                            <a href="#" class="b_grid" data-back="b_grid"></a>
+                                            <a href="#" class="b_hline" data-back="b_hline"></a>
+                                            <a href="#" class="b_simple" data-back="b_simple"></a>
+                                            <a href="#" class="b_vline" data-back="b_vline"></a>
+                                            <div class="help-block">On click background will changed and saved settings</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <div class="side fr">
+                                    <button class="btn btn-primary popup-close">Close</button>
+                                </div>                                
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="item">
+                        <a href="#" class="btn btn-primary btn-sm">
+                            <span class="i-chat"></span>
+                        </a>
+                        <div class="popup">
+                            <div class="head">
+                                <h2>Messages</h2>
+                            </div>
+                            <div class="content npb messages minify" id="messages"></div>
+                            <div class="footer">
+                                <div class="side fl">
+                                    <button class="btn btn-link">Show all</button>
+                                </div>
+                                <div class="side fr">
+                                    <button class="btn btn-primary popup-close">Close</button>
+                                </div>                                
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="item">                        
+                        <div class="btn-group">                        
+                            <a href="#" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
+                                <span class="i-forward"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><span class="i-profile"></span> Profile</a></li>
+                                <li><a href="#"><span class="i-tools"></span> Controls</a></li>                                
+                                <li><a href="#"><span class="i-locked"></span> Lock</a></li>
+                                <li><a href="#"><span class="i-forward"></span> Logout</a></li>
+                            </ul> 
+                        </div>
+                    </div>                
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div id="layout">
+        
+            <div id="sidebar">
+
+                <div class="user">
+                    <div class="pic">
+                        <img src="img/examples/users/dmitry_m.jpg"/>
+                    </div>
+                    <div class="info">
+                        <div class="name">
+                            <a href="#">John Doe</a>
+                        </div>
+                        <div class="buttons">
+                            <a href="#"><span class="i-cog"></span> Settings</a>
+                            <a href="#"><span class="i-chat"></span> Messages</a>
+                            <a href="#" class="fr"><span class="i-forward"></span> Logout</a>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="navigation">
+                    <li>
+                        <a href="index.html">Dashboard</a>
+                    </li>
+                    <li class="openable">
+                        <a href="#">UI Elements</a>
+                        <ul>
+                            <li>
+                                <a href="ui_elements.html">Elements</a>
+                            </li>
+                            <li>
+                                <a href="ui_widgets.html">Widgets</a>
+                            </li>
+                            <li>
+                                <a href="ui_buttons.html">Buttons</a>
+                            </li>
+                            <li>
+                                <a href="ui_icons.html">Icons</a>
+                            </li>
+                            <li>
+                                <a href="ui_grid.html">Grid system</a>
+                            </li>                        
+                        </ul>
+                    </li> 
+                    <li class="openable open">
+                        <a href="#">Form Stuff</a>
+                        <ul>
+                            <li>
+                                <a href="form_elements.html">Form elements</a>
+                            </li>                            
+                            <li class="active">
+                                <a href="form_validation.html">Form validation</a>
+                            </li>                                                        
+                            <li>
+                                <a href="form_wizard.html">Wizard</a>
+                            </li>
+                            <li>
+                                <a href="form_wysiwyg.html">WYSIWYG</a>
+                            </li>     
+                            <li>
+                                <a href="form_code_editor.html">Code editor</a>
+                            </li>
+                        </ul>                        
+                    </li>                
+                    <li>
+                        <a href="messages.html">Messages</a>
+                    </li>                                
+                    <li>
+                        <a href="charts.html">Charts</a>
+                    </li>                                   
+                    <li class="openable">                        
+                        <a href="tables.html">Tables</a>
+                        <ul>
+                            <li>
+                                <a href="tables_default.html">Default tables</a>
+                            </li>
+                            <li>
+                                <a href="tables_sort.html">Sorting tables</a>
+                            </li>
+                            <li>
+                                <a href="tables_edit.html">Editable tables</a>
+                            </li>
+                        </ul>
+                    </li>       
+                    <li>
+                        <a href="typography.html">Typography</a>                       
+                    </li>       
+                    <li>
+                        <a href="files.html">File handling</a>                       
+                    </li>
+                    <li>
+                        <a href="calendar.html">Calendar</a>                       
+                    </li>                    
+                    <li class="openable">
+                        <a href="#">Maps</a>
+                        <ul>
+                            <li>
+                                <a href="maps_vector.html">Vector maps</a>
+                            </li>
+                            <li>
+                                <a href="maps_google.html">Google maps</a>
+                            </li>                            
+                        </ul>
+                    </li>                    
+                    <li class="openable">
+                        <a href="#">Sample Pages</a>
+                        <ul>
+                            <li>
+                                <a href="sample_login.html">Login</a>
+                            </li>     
+                            <li>
+                                <a href="sample_user_edit.html">User edit</a>
+                            </li>             
+                            <li>
+                                <a href="sample_search.html">Search result</a>
+                            </li>    
+                            <li>
+                                <a href="sample_faq.html">FAQ</a>
+                            </li>                      
+                            <li>
+                                <a href="sample_mailbox.html">Mailbox</a>
+                            </li>
+                            <li>
+                                <a href="sample_invoice.html">Invoice</a>
+                            </li>
+                            <li>
+                                <a href="sample_gallery.html">Gallery</a>
+                            </li>                            
+                            <li>
+                                <a href="sample_blank.html">Blank page</a>
+                            </li>
+                            <li>
+                                <a href="sample_price.html">Pricing table</a>
+                            </li>
+                            <li>
+                                <a href="sample_payment.html">Payment table</a>
+                            </li>                            
+                            <li class="openable">
+                                <a href="#">Error pages</a>
+                                <ul>
+                                    <li><a href="sample_error_403.html">Error 403 forbidden</a></li>
+                                    <li><a href="sample_error_404.html">Error 404 not found</a></li>
+                                    <li><a href="sample_error_503.html">Error 503 service unavailable</a></li>
+                                </ul>
+                            </li>                            
+                        </ul>
+                    </li>
+                    <li class="openable">
+                        <a href="#" class="icon"><span class="i-star text-info"></span>Navigation samples<span class="label label-danger fr">+6</span></a>
+                        <ul>
+                            <li><a href="#" class="icon"><span class="i-battery text-danger"></span>Second level<span class="label label-info fr">$35,224</span></a></li>                            
+                            <li class="openable">
+                                <a href="#" class="icon"><span class="i-cart text-success"></span>Second level<span class="label label-danger fr">+3</span></a>
+                                <ul>
+                                    <li><a href="#" class="icon"><span class="i-film"></span>Third level<span class="label label-info fr">3</span><span class="label label-success fr">2</span><span class="label fr">1</span></a></li>
+                                    <li class="active"><a href="#" class="icon"><span class="i-cube text-info"></span>Active third level<span class="label label-info fr">3</span><span class="label label-info fr">2</span><span class="label label-info fr">1</span></a></li>
+                                    <li><a href="#" class="icon"><span class="i-info"></span>Third level<span class="label label-warning fr">3</span><span class="label label-danger fr">2</span><span class="label fr">1</span></a></li>
+                                </ul>
+                            </li>                            
+                            <li><a href="#" class="icon"><span class="i-box text-warning"></span>Second level<span class="label label-success fr">$1989.02</span></a></li>
+                        </ul>
+                    </li>                      
+                </ul>
+
+            </div>
+
+            <div id="content">                        
+                <div class="wrap">
+                    
+                    <div class="head">
+                        <div class="info">
+                            <h1>From validation</h1>
+                            <ul class="breadcrumb">
+                                <li><a href="#">Dashboard</a></li>
+                                <li><a href="#">Form Stuff</a></li>
+                                <li class="active">From validation</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="search">
+                            <form action="" method="post">
+                                <input type="text" class="form-control" placeholder="search..."/>                                
+                                <button type="submit"><span class="i-calendar"></span></button>
+                                <button type="submit"><span class="i-magnifier"></span></button>
+                            </form>
+                        </div>                        
+                    </div>                                                                    
+                    
+                    <div class="container">
+                    
+                        <div class="row">
+
+                            <div class="col-md-12">
+                                <form id="validate" method="POST" action="javascript:alert('Form #validate submited');">
+                                <div class="block">
+                                    <div class="head">
+                                        <h2>Default fileds</h2>
+                                        <div class="side fr">
+                                            <button class="btn btn-default" onClick="clear_form('#validate');" type="button">Clear form</button>
+                                        </div>
+                                    </div>
+                                    <div class="content np">    
+                                        
+                                            <div class="controls-row">
+                                                <div class="col-md-2">Login:</div>
+                                                <div class="col-md-5">
+                                                    <input type="text" class="validate[required,maxSize[8]] form-control"/>                                                    
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <span class="help-inline">Required, max size = 8</span>
+                                                </div>
+                                            </div>
+                                            <div class="controls-row">
+                                                <div class="col-md-2">Password:</div>
+                                                <div class="col-md-5">
+                                                    <input type="password" class="validate[required,minSize[5],maxSize[10]] form-control" id="password"/>
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <span class="help-inline">Required, min size = 5, max size = 10</span>
+                                                </div>
+                                            </div>                    
+                                            <div class="controls-row">
+                                                <div class="col-md-2">Confirm Password:</div>
+                                                <div class="col-md-5">                                                    
+                                                    <input type="password" class="validate[required,equals[password]] form-control"/>
+                                                </div>
+                                                <div class="col-md-5">                                                    
+                                                    <span class="help-inline">Required, equals Password</span>
+                                                </div>
+                                            </div>                            
+                                            <div class="controls-row">
+                                                <div class="col-md-2">Age:</div>
+                                                <div class="col-md-5">
+                                                    <input type="text" class="validate[required,custom[integer],min[18],max[120]] form-control"/>
+                                                    <span class="help-block">Required, integer, min value = 18, max = 120</span>
+                                                </div>                        
+                                                <div class="col-md-2 TAR">Gender:</div>
+                                                <div class="col-md-3">
+                                                    <label class="radio inline">
+                                                        <input type="radio" class="validate[required]" name="gender" value="1"/> Male
+                                                    </label>
+                                                    <label class="radio inline">
+                                                        <input type="radio" class="validate[required]" name="gender" value="0"/> Famale
+                                                    </label>                                                    
+                                                </div>                        
+                                            </div>
+                                            <div class="controls-row">
+                                                <div class="col-md-2">Date of birth:</div>
+                                                <div class="col-md-5">
+                                                    <input type="text" class="validate[required,custom[date]] form-control"/>
+                                                </div>
+                                                <div class="col-md-5">                                                    
+                                                    <span class="help-inline">Required, date YYYY-MM-DD</span>
+                                                </div>
+                                            </div>
+                                            <div class="controls-row">
+                                                <div class="col-md-2">Credit card:</div>
+                                                <div class="col-md-5">
+                                                    <input type="text" class="validate[required,creditCard] form-control"/>
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <span class="help-inline">Required, credit card number</span>
+                                                </div>
+                                            </div>             
+                                            <div class="controls-row">
+                                                <div class="col-md-2">Site:</div>
+                                                <div class="col-md-5">
+                                                    <input type="text" value="http://" class="validate[required,custom[url]] form-control"/>
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <span class="help-inline">Required, url</span>
+                                                </div>
+                                            </div>                              
+                                            <div class="controls-row">                        
+                                                <div class="col-md-12">
+                                                    <label class="checkbox inline">
+                                                        <input type="checkbox" class="validate[required]" name="terms" value="1"/> Yes, I accept your terms and conditions.
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        
+                                    </div>
+                                    <div class="footer">
+                                        <div class="side fr">
+                                            <div class="btn-group">
+                                                <button class="btn btn-default" type="button" onClick="$('#validate').validationEngine('hide');">Hide prompts</button>
+                                                <button class="btn btn-primary" type="submit">Submit</button>
+                                            </div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                </form>
+
+                            </div>
+
+                        </div>                        
+                        
+                        <div class="row">
+
+                            <div class="col-md-12">
+                                <form id="validate_custom" method="POST" action="javascript:alert('#validate_custom submited');">
+                                <div class="block">
+                                    <div class="head">
+                                        <h2>Custom fields validation</h2>
+                                        <div class="side fr">
+                                            <button class="btn btn-default" onClick="clear_form('#validate_custom');" type="button">Clear form</button>
+                                        </div>                                        
+                                    </div>
+                                    <div class="content np">   
+                                        
+                                        <div class="controls-row">
+                                            <div class="col-md-2">Select:</div>
+                                            <div class="col-md-10">                            
+                                                <select name="s_example" class="validate[required]">
+                                                    <option value=""></option>
+                                                    <option value="1">Andorra</option>
+                                                    <option value="2">Antarctica</option>                                
+                                                    <option value="3">Ukraine</option>                                                                       
+                                                </select>                            
+                                                <span class="help-inline">Required</span>
+                                            </div>
+                                        </div>
+                                        <div class="controls-row">
+                                            <div class="col-md-2">Checkbox:</div>
+                                            <div class="col-md-10">
+                                                <label class="checkbox inline">
+                                                    <input type="checkbox" class="validate[required]" name="vcheck" value="1"/> Enabled 
+                                                </label>                                                
+                                                <label class="checkbox inline">
+                                                    <input name="vcheck" value="0" type="checkbox" disabled="disabled" class="validate[required]"/> Disabled                                                    
+                                                </label>                                                
+                                            </div>
+                                        </div>                    
+                                        <div class="controls-row">
+                                            <div class="col-md-2">Radio:</div>
+                                            <div class="col-md-10">   
+                                                <label class="radio inline">
+                                                    <input type="radio" class="validate[required]" name="vradio" value="1"/> Enabled
+                                                </label>
+                                                <label class="radio inline">
+                                                    <input type="radio" disabled="disabled" class="validate[required]" name="vradio" value="0"/> Disabled
+                                                </label>                                                
+                                            </div>
+                                        </div>
+                                        <div class="controls-row">
+                                            <div class="col-md-2">Datepicker:</div>
+                                            <div class="col-md-5">                            
+                                                <input type="text" class="validate[required] datepicker form-control"/>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <span class="help-inline">Required</span>
+                                            </div>
+                                        </div>                                       
+
+                                        <div class="controls-row">
+                                            <div class="col-md-2">Group required:</div>
+                                            <div class="col-md-5">                            
+                                                <input class="validate[groupRequired[payments]] form-control" type="text" name="credit" id="credit" />
+                                            </div>
+                                            <div class="col-md-5">
+                                                <span class="help-inline">Any of group fields must be filled</span>
+                                            </div>
+                                        </div>
+                                        <div class="controls-row">
+                                            <div class="col-md-2"></div>
+                                            <div class="col-md-5">                            
+                                                <input class="validate[groupRequired[payments]] form-control" type="text" name="paypal" id="paypal" />
+                                            </div>
+                                            <div class="col-md-5">
+                                                <span class="help-inline">Any of group fields must be filled</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="controls-row">
+                                            <div class="col-md-2">Condition required:</div>
+                                            <div class="col-md-5">                            
+                                                <input type="text" name="creditcard" id="creditcard" class="form-control" placeholder="Credit card"/>                   
+                                            </div>
+                                            <div class="col-md-5"></div>
+                                        </div>
+                                        <div class="controls-row">
+                                            <div class="col-md-2"></div>
+                                            <div class="col-md-5">                            
+                                                <input class="validate[condRequired[creditcard]] form-control" type="text" id="ccv" name="ccv" placeholder="CCV"/>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <span class="help-inline">This field is required if "Credit card" field is filled</span>
+                                            </div>
+                                        </div>                                        
+                                        
+                                    </div>
+                                    <div class="footer">
+                                        <div class="side fr">
+                                            <div class="btn-group">
+                                                <button class="btn btn-default" type="button" onClick="$('#validate_custom').validationEngine('hide');">Hide prompts</button>
+                                                <button class="btn btn-primary" type="submit">Submit</button>
+                                            </div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                </form>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="row">
+
+                            <div class="col-md-12">
+                                <div class="block">
+                                    <div class="head">
+                                        <h2>Masked inputs</h2>
+                                        <div class="side fr">
+                                            <button class="btn btn-default" onClick="clear_form('#makedinputs');" type="button">Clear form</button>
+                                        </div>                                        
+                                    </div>
+                                    <div class="content np">   
+                                        <form id="makedinputs" action="#" method="post">
+                                            <div class="controls-row">
+                                                <div class="col-md-2">Date:</div>
+                                                <div class="col-md-5">
+                                                    <input type="text" class="mask_date form-control" value=""/>
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <span class="help-inline">Example: 2012-12-21</span>
+                                                </div>
+                                            </div>
+                                            <div class="controls-row">
+                                                <div class="col-md-2">Phone:</div>
+                                                <div class="col-md-5">                                                    
+                                                    <input type="text" class="mask_phone form-control" value=""/>
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <span class="help-inline">Example: 98 (765) 432-10-98</span>
+                                                </div>
+                                            </div>
+                                            <div class="controls-row">
+                                                <div class="col-md-2">Phone + Ext:</div>
+                                                <div class="col-md-5">
+                                                    <input type="text" class="mask_phone_ext form-control" value=""/>
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <span class="help-inline">Example: 98 (765) 432-10-98 x9999</span>
+                                                </div>
+                                            </div>                    
+                                            <div class="controls-row">
+                                                <div class="col-md-2">Credit:</div>
+                                                <div class="col-md-5">
+                                                    <input type="text" class="mask_credit form-control" value=""/>
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <span class="help-inline">Example: 9876-5432-1098-7654</span>
+                                                </div>
+                                            </div>
+                                            <div class="controls-row">
+                                                <div class="col-md-2">TIN:</div>
+                                                <div class="col-md-5">
+                                                    <input type="text" class="mask_tin form-control" value=""/>
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <span class="help-inline">Example: 98-7654321</span>
+                                                </div>
+                                            </div>
+                                            <div class="controls-row">
+                                                <div class="col-md-2">SSN:</div>
+                                                <div class="col-md-5">
+                                                    <input type="text" class="mask_ssn form-control" value=""/>
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <span class="help-inline">Example: 987-65-4321</span>
+                                                </div>
+                                            </div>                    
+                                            <div class="controls-row">
+                                                <div class="col-md-2">Product:</div>
+                                                <div class="col-md-5">
+                                                    <input type="text" class="mask_product form-control" value=""/>
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <span class="help-inline">Example: A1-234-B567</span>
+                                                </div>
+                                            </div>                       
+                                            <div class="controls-row">
+                                                <div class="col-md-2">Percent:</div>
+                                                <div class="col-md-5">
+                                                    <input type="text" class="mask_percent form-control" value=""/>
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <span class="help-inline">Example: 50%</span>
+                                                </div>
+                                            </div>                                       
+                                        </form>
+                                    </div>                                    
+                                </div>
+                            </div>
+                            
+                        </div>                        
+                        
+                    </div>
+                        
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+    
+</body>
+</html>

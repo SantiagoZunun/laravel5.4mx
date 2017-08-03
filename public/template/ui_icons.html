@@ -1,0 +1,1493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>        
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />    
+    <!--[if gt IE 8]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />        
+    <![endif]-->                
+    <title>Icons - Leo - Premium Admin Template</title>
+    <link rel="icon" type="image/ico" href="favicon.ico"/>
+    
+    <link href="css/stylesheets.css" rel="stylesheet" type="text/css" />
+    
+    <!--[if lte IE 7]>
+        <script type='text/javascript' src='js/other/lte-ie7.js'></script>
+    <![endif]-->    
+    
+    <script type='text/javascript' src='js/jquery/jquery.min.js'></script>
+    <script type='text/javascript' src='js/jquery/jquery-ui-1.10.3.custom.min.js'></script>
+    <script type='text/javascript' src='js/jquery/jquery-migrate.min.js'></script>
+    <script type='text/javascript' src='js/jquery/globalize.js'></script>
+    
+    <script type='text/javascript' src='js/bootstrap/bootstrap.min.js'></script>    
+    <script type='text/javascript' src='js/cookies/jquery.cookies.2.2.0.min.js'></script>
+    
+    <script type='text/javascript' src='js/scrollup/jquery.scrollUp.min.js'></script>
+    
+    <script type='text/javascript' src='js/plugins.js'></script>    
+    <script type='text/javascript' src='js/actions.js'></script>
+</head>
+<body>    
+    
+    <div id="wrapper">
+        
+        <div id="header">
+            
+            <div class="wrap">
+                
+                <a href="index.html" class="logo"></a>
+                
+                <div class="buttons fl">
+                    <div class="item">
+                        <a href="#" class="btn btn-primary btn-sm c_layout">
+                            <span class="i-layout-8"></span>                            
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="btn btn-primary btn-sm c_screen">
+                            <span class="i-stretch"></span>                            
+                        </a>
+                    </div>                    
+                </div>
+                
+                <div class="buttons">
+                    <div class="item">
+                        <a href="#" class="btn btn-primary btn-sm">
+                            <span class="i-cog"></span>
+                        </a>
+                        <div class="popup">
+                            <div class="head">
+                                <h2>Settings</h2>
+                            </div>
+                            <div class="content np">      
+                                <div class="row">
+                                    <div class="controls-row">
+                                        <div class="col-md-3">Themes:</div>
+                                        <div class="col-md-9 themes">
+                                            <a href="#" class="default tip" data-theme="" title="Default"></a>
+                                            <a href="#" class="dark tip" data-theme="themeDark" title="Dark"></a>
+                                            <a href="#" class="simple tip" data-theme="themeSimple" title="Simple"></a>
+                                            <div class="help-block">On click theme will changed and saved settings</div>
+                                        </div>
+                                    </div>               
+                                    <div class="controls-row">
+                                        <div class="col-md-3">Backgrounds:</div>
+                                        <div class="col-md-9 backgrounds">
+                                            <a href="#" class="default tip" data-theme="" title="Default"></a>                                            
+                                            <a href="#" class="b_bcrosshatch" data-back="b_bcrosshatch"></a>
+                                            <a href="#" class="b_crosshatch" data-back="b_crosshatch"></a>
+                                            <a href="#" class="b_cube" data-back="b_cube"></a>
+                                            <a href="#" class="b_dots" data-back="b_dots"></a>
+                                            <a href="#" class="b_grid" data-back="b_grid"></a>
+                                            <a href="#" class="b_hline" data-back="b_hline"></a>
+                                            <a href="#" class="b_simple" data-back="b_simple"></a>
+                                            <a href="#" class="b_vline" data-back="b_vline"></a>
+                                            <div class="help-block">On click background will changed and saved settings</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <div class="side fr">
+                                    <button class="btn btn-primary popup-close">Close</button>
+                                </div>                                
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="item">
+                        <a href="#" class="btn btn-primary btn-sm">
+                            <span class="i-chat"></span>
+                        </a>
+                        <div class="popup">
+                            <div class="head">
+                                <h2>Messages</h2>
+                            </div>
+                            <div class="content npb messages minify" id="messages"></div>
+                            <div class="footer">
+                                <div class="side fl">
+                                    <button class="btn btn-link">Show all</button>
+                                </div>
+                                <div class="side fr">
+                                    <button class="btn btn-primary popup-close">Close</button>
+                                </div>                                
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="item">                        
+                        <div class="btn-group">                        
+                            <a href="#" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
+                                <span class="i-forward"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><span class="i-profile"></span> Profile</a></li>
+                                <li><a href="#"><span class="i-tools"></span> Controls</a></li>                                
+                                <li><a href="#"><span class="i-locked"></span> Lock</a></li>
+                                <li><a href="#"><span class="i-forward"></span> Logout</a></li>
+                            </ul> 
+                        </div>
+                    </div>                
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div id="layout">
+        
+            <div id="sidebar">
+
+                <div class="user">
+                    <div class="pic">
+                        <img src="img/examples/users/dmitry_m.jpg"/>
+                    </div>
+                    <div class="info">
+                        <div class="name">
+                            <a href="#">John Doe</a>
+                        </div>
+                        <div class="buttons">
+                            <a href="#"><span class="i-cog"></span> Settings</a>
+                            <a href="#"><span class="i-chat"></span> Messages</a>
+                            <a href="#" class="fr"><span class="i-forward"></span> Logout</a>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="navigation">
+                    <li>
+                        <a href="index.html">Dashboard</a>
+                    </li>
+                    <li class="openable open">
+                        <a href="#">UI Elements</a>
+                        <ul>
+                            <li>
+                                <a href="ui_elements.html">Elements</a>
+                            </li>
+                            <li>
+                                <a href="ui_widgets.html">Widgets</a>
+                            </li>
+                            <li>
+                                <a href="ui_buttons.html">Buttons</a>
+                            </li>
+                            <li class="active">
+                                <a href="ui_icons.html">Icons</a>
+                            </li>
+                            <li>
+                                <a href="ui_grid.html">Grid system</a>
+                            </li>                        
+                        </ul>
+                    </li> 
+                    <li class="openable">
+                        <a href="#">Form Stuff</a>
+                        <ul>
+                            <li>
+                                <a href="form_elements.html">Form elements</a>
+                            </li>                            
+                            <li>
+                                <a href="form_validation.html">Form validation</a>
+                            </li>                                                        
+                            <li>
+                                <a href="form_wizard.html">Wizard</a>
+                            </li>
+                            <li>
+                                <a href="form_wysiwyg.html">WYSIWYG</a>
+                            </li>
+                            <li>
+                                <a href="form_code_editor.html">Code editor</a>
+                            </li>
+                        </ul>                        
+                    </li>                
+                    <li>
+                        <a href="messages.html">Messages</a>
+                    </li>                                
+                    <li>
+                        <a href="charts.html">Charts</a>
+                    </li>                                   
+                    <li class="openable">                        
+                        <a href="tables.html">Tables</a>
+                        <ul>
+                            <li>
+                                <a href="tables_default.html">Default tables</a>
+                            </li>
+                            <li>
+                                <a href="tables_sort.html">Sorting tables</a>
+                            </li>
+                            <li>
+                                <a href="tables_edit.html">Editable tables</a>
+                            </li>
+                        </ul>
+                    </li>               
+                    <li>
+                        <a href="typography.html">Typography</a>                       
+                    </li>
+                    <li>
+                        <a href="files.html">File handling</a>                       
+                    </li>
+                    <li>
+                        <a href="calendar.html">Calendar</a>                       
+                    </li>                    
+                    <li class="openable">
+                        <a href="#">Maps</a>
+                        <ul>
+                            <li>
+                                <a href="maps_vector.html">Vector maps</a>
+                            </li>
+                            <li>
+                                <a href="maps_google.html">Google maps</a>
+                            </li>                            
+                        </ul>
+                    </li>                    
+                    <li class="openable">
+                        <a href="#">Sample Pages</a>
+                        <ul>
+                            <li>
+                                <a href="sample_login.html">Login</a>
+                            </li>     
+                            <li>
+                                <a href="sample_user_edit.html">User edit</a>
+                            </li>                            
+                            <li>
+                                <a href="sample_search.html">Search result</a>
+                            </li>          
+                            <li>
+                                <a href="sample_faq.html">FAQ</a>
+                            </li>                            
+                            <li>
+                                <a href="sample_mailbox.html">Mailbox</a>
+                            </li>       
+                            <li>
+                                <a href="sample_invoice.html">Invoice</a>
+                            </li>
+                            <li>
+                                <a href="sample_gallery.html">Gallery</a>
+                            </li>                            
+                            <li>
+                                <a href="sample_blank.html">Blank page</a>
+                            </li>    
+                            <li>
+                                <a href="sample_price.html">Pricing table</a>
+                            </li>
+                            <li>
+                                <a href="sample_payment.html">Payment table</a>
+                            </li>                            
+                            <li class="openable">
+                                <a href="#">Error pages</a>
+                                <ul>
+                                    <li><a href="sample_error_403.html">Error 403 forbidden</a></li>
+                                    <li><a href="sample_error_404.html">Error 404 not found</a></li>
+                                    <li><a href="sample_error_503.html">Error 503 service unavailable</a></li>
+                                </ul>
+                            </li>                            
+                        </ul>
+                    </li>
+                    <li class="openable">
+                        <a href="#" class="icon"><span class="i-star text-info"></span>Navigation samples<span class="label label-danger fr">+6</span></a>
+                        <ul>
+                            <li><a href="#" class="icon"><span class="i-battery text-danger"></span>Second level<span class="label label-info fr">$35,224</span></a></li>                            
+                            <li class="openable">
+                                <a href="#" class="icon"><span class="i-cart text-success"></span>Second level<span class="label label-danger fr">+3</span></a>
+                                <ul>
+                                    <li><a href="#" class="icon"><span class="i-film"></span>Third level<span class="label label-info fr">3</span><span class="label label-success fr">2</span><span class="label fr">1</span></a></li>
+                                    <li class="active"><a href="#" class="icon"><span class="i-cube text-info"></span>Active third level<span class="label label-info fr">3</span><span class="label label-info fr">2</span><span class="label label-info fr">1</span></a></li>
+                                    <li><a href="#" class="icon"><span class="i-info"></span>Third level<span class="label label-warning fr">3</span><span class="label label-danger fr">2</span><span class="label fr">1</span></a></li>
+                                </ul>
+                            </li>                            
+                            <li><a href="#" class="icon"><span class="i-box text-warning"></span>Second level<span class="label label-success fr">$1989.02</span></a></li>
+                        </ul>
+                    </li>                     
+                </ul>
+
+            </div>
+
+            <div id="content">  
+                
+                <div class="wrap">                    
+                    
+                    <div class="head">
+                        <div class="info">
+                            <h1>Icons</h1>
+                            <ul class="breadcrumb">
+                                <li><a href="#">Dashboard</a></li>
+                                <li><a href="#">UI</a></li>
+                                <li class="active">Icons</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="search">
+                            <form action="" method="post">
+                                <input type="text" class="form-control" placeholder="search..."/>                                
+                                <button type="submit"><span class="i-calendar"></span></button>
+                                <button type="submit"><span class="i-magnifier"></span></button>
+                            </form>
+                        </div>                        
+                    </div>                                                                    
+                    
+                    <div class="container">
+                        
+                        <div class="row">
+                            <div class="col-md-12">
+                                
+                                <div class="block">
+                                    <div class="head">
+                                        <h2>Icomoon font icons</h2>
+                                        <ul class="buttons">                                            
+                                            <li><a href="#" class="block_toggle"><span class="i-arrow-down-3"></span></a></li>
+                                            <li><a href="#" class="block_remove"><span class="i-cancel-2"></span></a></li>
+                                        </ul>                                        
+                                    </div>
+                                    <div class="toolbar">
+                                        Select an icon to get code: <code id="icon_icomoon">&lt;i class="i-number-10"&gt;&lt;/i&gt;</code>
+                                    </div>
+                                    <div class="content">
+                                        
+                                        <ul class="icons" id="icon_icomoon_list"> 
+                                            <li>
+                                                    <i aria-hidden="true" class="i-number-10"></i>
+                                                    &nbsp;i-number-10
+                                            </li>                                            
+                                            <li>
+                                                    <i aria-hidden="true" class="i-number"></i>
+                                                    &nbsp;i-number
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-number-2"></i>
+                                                    &nbsp;i-number-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-number-3"></i>
+                                                    &nbsp;i-number-3
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-number-4"></i>
+                                                    &nbsp;i-number-4
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-number-5"></i>
+                                                    &nbsp;i-number-5
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-number-6"></i>
+                                                    &nbsp;i-number-6
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-number-7"></i>
+                                                    &nbsp;i-number-7
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-number-8"></i>
+                                                    &nbsp;i-number-8
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-number-9"></i>
+                                                    &nbsp;i-number-9
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-tag"></i>
+                                                    &nbsp;i-tag
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-tag-2"></i>
+                                                    &nbsp;i-tag-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-link"></i>
+                                                    &nbsp;i-link
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-link-2"></i>
+                                                    &nbsp;i-link-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-cabinet"></i>
+                                                    &nbsp;i-cabinet
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-cabinet-2"></i>
+                                                    &nbsp;i-cabinet-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-calendar"></i>
+                                                    &nbsp;i-calendar
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-calendar-2"></i>
+                                                    &nbsp;i-calendar-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-file"></i>
+                                                    &nbsp;i-file
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-file-2"></i>
+                                                    &nbsp;i-file-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-file-3"></i>
+                                                    &nbsp;i-file-3
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-phone"></i>
+                                                    &nbsp;i-phone
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-tablet"></i>
+                                                    &nbsp;i-tablet
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-window"></i>
+                                                    &nbsp;i-window
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-monitor"></i>
+                                                    &nbsp;i-monitor
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-ipod"></i>
+                                                    &nbsp;i-ipod
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-camera"></i>
+                                                    &nbsp;i-camera
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-camera-2"></i>
+                                                    &nbsp;i-camera-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-film"></i>
+                                                    &nbsp;i-film
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-film-2"></i>
+                                                    &nbsp;i-film-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-microphone"></i>
+                                                    &nbsp;i-microphone
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-inbox"></i>
+                                                    &nbsp;i-inbox
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-download"></i>
+                                                    &nbsp;i-download
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-upload"></i>
+                                                    &nbsp;i-upload
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-inbox-2"></i>
+                                                    &nbsp;i-inbox-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-checkmark"></i>
+                                                    &nbsp;i-checkmark
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-cancel"></i>
+                                                    &nbsp;i-cancel
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-plus"></i>
+                                                    &nbsp;i-plus
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-minus"></i>
+                                                    &nbsp;i-minus
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-notice"></i>
+                                                    &nbsp;i-notice
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-cog"></i>
+                                                    &nbsp;i-cog
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-cogs"></i>
+                                                    &nbsp;i-cogs
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-cog-2"></i>
+                                                    &nbsp;i-cog-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-warning"></i>
+                                                    &nbsp;i-warning
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-picture"></i>
+                                                    &nbsp;i-picture
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-pictures"></i>
+                                                    &nbsp;i-pictures
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-pictures-2"></i>
+                                                    &nbsp;i-pictures-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-alarm-clock"></i>
+                                                    &nbsp;i-alarm-clock
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-time"></i>
+                                                    &nbsp;i-time
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-checkmark-2"></i>
+                                                    &nbsp;i-checkmark-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-cancel-2"></i>
+                                                    &nbsp;i-cancel-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-site-map"></i>
+                                                    &nbsp;i-site-map
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-site-map-2"></i>
+                                                    &nbsp;i-site-map-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-cloud"></i>
+                                                    &nbsp;i-cloud
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-upload-2"></i>
+                                                    &nbsp;i-upload-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-chart"></i>
+                                                    &nbsp;i-chart
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-chart-2"></i>
+                                                    &nbsp;i-chart-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-chart-3"></i>
+                                                    &nbsp;i-chart-3
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-chart-4"></i>
+                                                    &nbsp;i-chart-4
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-chart-5"></i>
+                                                    &nbsp;i-chart-5
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-chart-6"></i>
+                                                    &nbsp;i-chart-6
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-location"></i>
+                                                    &nbsp;i-location
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-download-2"></i>
+                                                    &nbsp;i-download-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-phone-2"></i>
+                                                    &nbsp;i-phone-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-phone-3"></i>
+                                                    &nbsp;i-phone-3
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-trashcan"></i>
+                                                    &nbsp;i-trashcan
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-locked"></i>
+                                                    &nbsp;i-locked
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-unlocked"></i>
+                                                    &nbsp;i-unlocked
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-magnifier"></i>
+                                                    &nbsp;i-magnifier
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-zoom-in"></i>
+                                                    &nbsp;i-zoom-in
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-zoom-out"></i>
+                                                    &nbsp;i-zoom-out
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-battery"></i>
+                                                    &nbsp;i-battery
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-battery-2"></i>
+                                                    &nbsp;i-battery-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-battery-3"></i>
+                                                    &nbsp;i-battery-3
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-battery-4"></i>
+                                                    &nbsp;i-battery-4
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-battery-5"></i>
+                                                    &nbsp;i-battery-5
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-cube"></i>
+                                                    &nbsp;i-cube
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-box"></i>
+                                                    &nbsp;i-box
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-box-2"></i>
+                                                    &nbsp;i-box-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-grid"></i>
+                                                    &nbsp;i-grid
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-grid-2"></i>
+                                                    &nbsp;i-grid-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-list"></i>
+                                                    &nbsp;i-list
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-list-2"></i>
+                                                    &nbsp;i-list-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-layout"></i>
+                                                    &nbsp;i-layout
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-layout-2"></i>
+                                                    &nbsp;i-layout-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-layout-3"></i>
+                                                    &nbsp;i-layout-3
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-layout-4"></i>
+                                                    &nbsp;i-layout-4
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-layout-5"></i>
+                                                    &nbsp;i-layout-5
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-layout-6"></i>
+                                                    &nbsp;i-layout-6
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-layout-7"></i>
+                                                    &nbsp;i-layout-7
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-layout-8"></i>
+                                                    &nbsp;i-layout-8
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-layout-9"></i>
+                                                    &nbsp;i-layout-9
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-layout-10"></i>
+                                                    &nbsp;i-layout-10
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-layout-11"></i>
+                                                    &nbsp;i-layout-11
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-layout-12"></i>
+                                                    &nbsp;i-layout-12
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-layout-13"></i>
+                                                    &nbsp;i-layout-13
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-layout-14"></i>
+                                                    &nbsp;i-layout-14
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-tools"></i>
+                                                    &nbsp;i-tools
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-screwdriver"></i>
+                                                    &nbsp;i-screwdriver
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-chat"></i>
+                                                    &nbsp;i-chat
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-comments"></i>
+                                                    &nbsp;i-comments
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-chat-2"></i>
+                                                    &nbsp;i-chat-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-chat-3"></i>
+                                                    &nbsp;i-chat-3
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-volume"></i>
+                                                    &nbsp;i-volume
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-volume-2"></i>
+                                                    &nbsp;i-volume-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-volume-3"></i>
+                                                    &nbsp;i-volume-3
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-resize"></i>
+                                                    &nbsp;i-resize
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-resize-2"></i>
+                                                    &nbsp;i-resize-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-stretch"></i>
+                                                    &nbsp;i-stretch
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-narrow"></i>
+                                                    &nbsp;i-narrow
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-download-3"></i>
+                                                    &nbsp;i-download-3
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-stats"></i>
+                                                    &nbsp;i-stats
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-stats-2"></i>
+                                                    &nbsp;i-stats-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-pencil"></i>
+                                                    &nbsp;i-pencil
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-pen"></i>
+                                                    &nbsp;i-pen
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-pin"></i>
+                                                    &nbsp;i-pin
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-pin-2"></i>
+                                                    &nbsp;i-pin-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-profile"></i>
+                                                    &nbsp;i-profile
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-profile-2"></i>
+                                                    &nbsp;i-profile-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-profile-3"></i>
+                                                    &nbsp;i-profile-3
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-rotate"></i>
+                                                    &nbsp;i-rotate
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-rotate-2"></i>
+                                                    &nbsp;i-rotate-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-reply"></i>
+                                                    &nbsp;i-reply
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-forward"></i>
+                                                    &nbsp;i-forward
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-retweet"></i>
+                                                    &nbsp;i-retweet
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-shuffle"></i>
+                                                    &nbsp;i-shuffle
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-loop"></i>
+                                                    &nbsp;i-loop
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-dollar"></i>
+                                                    &nbsp;i-dollar
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-dollar-2"></i>
+                                                    &nbsp;i-dollar-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-coins"></i>
+                                                    &nbsp;i-coins
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-bookmark"></i>
+                                                    &nbsp;i-bookmark
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-bookmark-2"></i>
+                                                    &nbsp;i-bookmark-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-address-book"></i>
+                                                    &nbsp;i-address-book
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-address-book-2"></i>
+                                                    &nbsp;i-address-book-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-envelope"></i>
+                                                    &nbsp;i-envelope
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-envelope-2"></i>
+                                                    &nbsp;i-envelope-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-music"></i>
+                                                    &nbsp;i-music
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-male"></i>
+                                                    &nbsp;i-male
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-female"></i>
+                                                    &nbsp;i-female
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-heart"></i>
+                                                    &nbsp;i-heart
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-info"></i>
+                                                    &nbsp;i-info
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-info-2"></i>
+                                                    &nbsp;i-info-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-expand"></i>
+                                                    &nbsp;i-expand
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-collapse"></i>
+                                                    &nbsp;i-collapse
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-pop-out"></i>
+                                                    &nbsp;i-pop-out
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-pop-in"></i>
+                                                    &nbsp;i-pop-in
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-checked"></i>
+                                                    &nbsp;i-checked
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-error"></i>
+                                                    &nbsp;i-error
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-add"></i>
+                                                    &nbsp;i-add
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-minus-2"></i>
+                                                    &nbsp;i-minus-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-printer"></i>
+                                                    &nbsp;i-printer
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-tags"></i>
+                                                    &nbsp;i-tags
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-switch"></i>
+                                                    &nbsp;i-switch
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-play"></i>
+                                                    &nbsp;i-play
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-pause"></i>
+                                                    &nbsp;i-pause
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-record"></i>
+                                                    &nbsp;i-record
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-stop"></i>
+                                                    &nbsp;i-stop
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-next"></i>
+                                                    &nbsp;i-next
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-previous"></i>
+                                                    &nbsp;i-previous
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-first"></i>
+                                                    &nbsp;i-first
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-last"></i>
+                                                    &nbsp;i-last
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-arrow-left"></i>
+                                                    &nbsp;i-arrow-left
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-arrow-down"></i>
+                                                    &nbsp;i-arrow-down
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-arrow-up"></i>
+                                                    &nbsp;i-arrow-up
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-arrow-right"></i>
+                                                    &nbsp;i-arrow-right
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-arrow-left-2"></i>
+                                                    &nbsp;i-arrow-left-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-arrow-down-2"></i>
+                                                    &nbsp;i-arrow-down-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-arrow-up-2"></i>
+                                                    &nbsp;i-arrow-up-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-arrow-right-2"></i>
+                                                    &nbsp;i-arrow-right-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-arrow-left-3"></i>
+                                                    &nbsp;i-arrow-left-3
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-arrow-down-3"></i>
+                                                    &nbsp;i-arrow-down-3
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-arrow-up-3"></i>
+                                                    &nbsp;i-arrow-up-3
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-arrow-right-3"></i>
+                                                    &nbsp;i-arrow-right-3
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-arrow-left-4"></i>
+                                                    &nbsp;i-arrow-left-4
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-arrow-down-4"></i>
+                                                    &nbsp;i-arrow-down-4
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-arrow-up-4"></i>
+                                                    &nbsp;i-arrow-up-4
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-arrow-right-4"></i>
+                                                    &nbsp;i-arrow-right-4
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-arrow-left-5"></i>
+                                                    &nbsp;i-arrow-left-5
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-arrow-down-5"></i>
+                                                    &nbsp;i-arrow-down-5
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-arrow-up-5"></i>
+                                                    &nbsp;i-arrow-up-5
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-untitled"></i>
+                                                    &nbsp;i-untitled
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-arrow-right-5"></i>
+                                                    &nbsp;i-arrow-right-5
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-arrow-left-6"></i>
+                                                    &nbsp;i-arrow-left-6
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-arrow-down-6"></i>
+                                                    &nbsp;i-arrow-down-6
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-arrow-up-6"></i>
+                                                    &nbsp;i-arrow-up-6
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-arrow-right-6"></i>
+                                                    &nbsp;i-arrow-right-6
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-arrow-left-7"></i>
+                                                    &nbsp;i-arrow-left-7
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-arrow-down-7"></i>
+                                                    &nbsp;i-arrow-down-7
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-arrow-up-7"></i>
+                                                    &nbsp;i-arrow-up-7
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-arrow-right-7"></i>
+                                                    &nbsp;i-arrow-right-7
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-menu"></i>
+                                                    &nbsp;i-menu
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-ellipsis"></i>
+                                                    &nbsp;i-ellipsis
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-dots"></i>
+                                                    &nbsp;i-dots
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-dot"></i>
+                                                    &nbsp;i-dot
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-cog-3"></i>
+                                                    &nbsp;i-cog-3
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-plus-2"></i>
+                                                    &nbsp;i-plus-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-minus-3"></i>
+                                                    &nbsp;i-minus-3
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-earth"></i>
+                                                    &nbsp;i-earth
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-cycle"></i>
+                                                    &nbsp;i-cycle
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-cw"></i>
+                                                    &nbsp;i-cw
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-ccw"></i>
+                                                    &nbsp;i-ccw
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-shuffle-2"></i>
+                                                    &nbsp;i-shuffle-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-folder"></i>
+                                                    &nbsp;i-folder
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-basket"></i>
+                                                    &nbsp;i-basket
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-paperplane"></i>
+                                                    &nbsp;i-paperplane
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-mail"></i>
+                                                    &nbsp;i-mail
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-pencil-2"></i>
+                                                    &nbsp;i-pencil-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-user"></i>
+                                                    &nbsp;i-user
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-users"></i>
+                                                    &nbsp;i-users
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-user-add"></i>
+                                                    &nbsp;i-user-add
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-export"></i>
+                                                    &nbsp;i-export
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-location-2"></i>
+                                                    &nbsp;i-location-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-map"></i>
+                                                    &nbsp;i-map
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-compass"></i>
+                                                    &nbsp;i-compass
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-location-3"></i>
+                                                    &nbsp;i-location-3
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-heart-2"></i>
+                                                    &nbsp;i-heart-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-heart-3"></i>
+                                                    &nbsp;i-heart-3
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-star"></i>
+                                                    &nbsp;i-star
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-star-2"></i>
+                                                    &nbsp;i-star-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-thumbs-up"></i>
+                                                    &nbsp;i-thumbs-up
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-thumbs-down"></i>
+                                                    &nbsp;i-thumbs-down
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-chat-4"></i>
+                                                    &nbsp;i-chat-4
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-comment"></i>
+                                                    &nbsp;i-comment
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-cart"></i>
+                                                    &nbsp;i-cart
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-checkmark-3"></i>
+                                                    &nbsp;i-checkmark-3
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-cross"></i>
+                                                    &nbsp;i-cross
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-minus-4"></i>
+                                                    &nbsp;i-minus-4
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-plus-3"></i>
+                                                    &nbsp;i-plus-3
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-cross-2"></i>
+                                                    &nbsp;i-cross-2
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-minus-5"></i>
+                                                    &nbsp;i-minus-5
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-plus-4"></i>
+                                                    &nbsp;i-plus-4
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-cross-3"></i>
+                                                    &nbsp;i-cross-3
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-arrow-left-8"></i>
+                                                    &nbsp;i-arrow-left-8
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-arrow-down-8"></i>
+                                                    &nbsp;i-arrow-down-8
+                                            </li>
+                                            <li>
+                                                    <i aria-hidden="true" class="i-arrow-up--upload"></i>
+                                                    &nbsp;i-arrow-up--upload
+                                            </li>                                            
+                                            
+                                        </ul>
+                                        
+                                    </div>
+                                </div>
+                                
+                                <div class="block">
+                                    <div class="head">
+                                        <h2>Glyphs icons</h2>
+                                        <ul class="buttons">                                            
+                                            <li><a href="#" class="block_toggle"><span class="i-arrow-down-3"></span></a></li>
+                                            <li><a href="#" class="block_remove"><span class="i-cancel-2"></span></a></li>
+                                        </ul>                                        
+                                    </div>
+                                    <div class="toolbar">
+                                        Select an icon to get code: <code id="icon_glyphs">&lt;i class="glyphicon glyphicon-glass"&gt;&lt;/i&gt;</code>
+                                    </div>
+                                    <div class="content">
+                                        <ul class="icons" id="icon_glyphs_list">
+                                            <li><i class="glyphicon glyphicon-glass"></i> glyphicon glyphicon-glass</li>
+                                            <li><i class="glyphicon glyphicon-music"></i> glyphicon glyphicon-music</li>
+                                            <li><i class="glyphicon glyphicon-search"></i> glyphicon glyphicon-search</li>
+                                            <li><i class="glyphicon glyphicon-envelope"></i> glyphicon glyphicon-envelope</li>
+                                            <li><i class="glyphicon glyphicon-heart"></i> glyphicon glyphicon-heart</li>
+                                            <li><i class="glyphicon glyphicon-star"></i> glyphicon glyphicon-star</li>
+                                            <li><i class="glyphicon glyphicon-star-empty"></i> glyphicon glyphicon-star-empty</li>
+                                            <li><i class="glyphicon glyphicon-user"></i> glyphicon glyphicon-user</li>
+                                            <li><i class="glyphicon glyphicon-film"></i> glyphicon glyphicon-film</li>
+                                            <li><i class="glyphicon glyphicon-th-large"></i> glyphicon glyphicon-th-large</li>
+                                            <li><i class="glyphicon glyphicon-th"></i> glyphicon glyphicon-th</li>
+                                            <li><i class="glyphicon glyphicon-th-list"></i> glyphicon glyphicon-th-list</li>
+                                            <li><i class="glyphicon glyphicon-ok"></i> glyphicon glyphicon-ok</li>
+                                            <li><i class="glyphicon glyphicon-remove"></i> glyphicon glyphicon-remove</li>
+                                            <li><i class="glyphicon glyphicon-zoom-in"></i> glyphicon glyphicon-zoom-in</li>
+                                            <li><i class="glyphicon glyphicon-zoom-out"></i> glyphicon glyphicon-zoom-out</li>
+                                            <li><i class="glyphicon glyphicon-off"></i> glyphicon glyphicon-off</li>
+                                            <li><i class="glyphicon glyphicon-signal"></i> glyphicon glyphicon-signal</li>
+                                            <li><i class="glyphicon glyphicon-cog"></i> glyphicon glyphicon-cog</li>
+                                            <li><i class="glyphicon glyphicon-trash"></i> glyphicon glyphicon-trash</li>
+                                            <li><i class="glyphicon glyphicon-home"></i> glyphicon glyphicon-home</li>
+                                            <li><i class="glyphicon glyphicon-file"></i> glyphicon glyphicon-file</li>
+                                            <li><i class="glyphicon glyphicon-time"></i> glyphicon glyphicon-time</li>
+                                            <li><i class="glyphicon glyphicon-road"></i> glyphicon glyphicon-road</li>
+                                            <li><i class="glyphicon glyphicon-download-alt"></i> glyphicon glyphicon-download-alt</li>
+                                            <li><i class="glyphicon glyphicon-download"></i> glyphicon glyphicon-download</li>
+                                            <li><i class="glyphicon glyphicon-upload"></i> glyphicon glyphicon-upload</li>
+                                            <li><i class="glyphicon glyphicon-inbox"></i> glyphicon glyphicon-inbox</li>
+
+                                            <li><i class="glyphicon glyphicon-play-circle"></i> glyphicon glyphicon-play-circle</li>
+                                            <li><i class="glyphicon glyphicon-repeat"></i> glyphicon glyphicon-repeat</li>
+                                            <li><i class="glyphicon glyphicon-refresh"></i> glyphicon glyphicon-refresh</li>
+                                            <li><i class="glyphicon glyphicon-list-alt"></i> glyphicon glyphicon-list-alt</li>
+                                            <li><i class="glyphicon glyphicon-lock"></i> glyphicon glyphicon-lock</li>
+                                            <li><i class="glyphicon glyphicon-flag"></i> glyphicon glyphicon-flag</li>
+                                            <li><i class="glyphicon glyphicon-headphones"></i> glyphicon glyphicon-headphones</li>
+                                            <li><i class="glyphicon glyphicon-volume-off"></i> glyphicon glyphicon-volume-off</li>
+                                            <li><i class="glyphicon glyphicon-volume-down"></i> glyphicon glyphicon-volume-down</li>
+                                            <li><i class="glyphicon glyphicon-volume-up"></i> glyphicon glyphicon-volume-up</li>
+                                            <li><i class="glyphicon glyphicon-qrcode"></i> glyphicon glyphicon-qrcode</li>
+                                            <li><i class="glyphicon glyphicon-barcode"></i> glyphicon glyphicon-barcode</li>
+                                            <li><i class="glyphicon glyphicon-tag"></i> glyphicon glyphicon-tag</li>
+                                            <li><i class="glyphicon glyphicon-tags"></i> glyphicon glyphicon-tags</li>
+                                            <li><i class="glyphicon glyphicon-book"></i> glyphicon glyphicon-book</li>
+                                            <li><i class="glyphicon glyphicon-bookmark"></i> glyphicon glyphicon-bookmark</li>
+                                            <li><i class="glyphicon glyphicon-print"></i> glyphicon glyphicon-print</li>
+                                            <li><i class="glyphicon glyphicon-camera"></i> glyphicon glyphicon-camera</li>
+                                            <li><i class="glyphicon glyphicon-font"></i> glyphicon glyphicon-font</li>
+                                            <li><i class="glyphicon glyphicon-bold"></i> glyphicon glyphicon-bold</li>
+                                            <li><i class="glyphicon glyphicon-italic"></i> glyphicon glyphicon-italic</li>
+                                            <li><i class="glyphicon glyphicon-text-height"></i> glyphicon glyphicon-text-height</li>
+                                            <li><i class="glyphicon glyphicon-text-width"></i> glyphicon glyphicon-text-width</li>
+                                            <li><i class="glyphicon glyphicon-align-left"></i> glyphicon glyphicon-align-left</li>
+                                            <li><i class="glyphicon glyphicon-align-center"></i> glyphicon glyphicon-align-center</li>
+                                            <li><i class="glyphicon glyphicon-align-right"></i> glyphicon glyphicon-align-right</li>
+                                            <li><i class="glyphicon glyphicon-align-justify"></i> glyphicon glyphicon-align-justify</li>
+                                            <li><i class="glyphicon glyphicon-list"></i> glyphicon glyphicon-list</li>
+
+                                            <li><i class="glyphicon glyphicon-indent-left"></i> glyphicon glyphicon-indent-left</li>
+                                            <li><i class="glyphicon glyphicon-indent-right"></i> glyphicon glyphicon-indent-right</li>
+                                            <li><i class="glyphicon glyphicon-facetime-video"></i> glyphicon glyphicon-facetime-video</li>
+                                            <li><i class="glyphicon glyphicon-picture"></i> glyphicon glyphicon-picture</li>
+                                            <li><i class="glyphicon glyphicon-pencil"></i> glyphicon glyphicon-pencil</li>
+                                            <li><i class="glyphicon glyphicon-map-marker"></i> glyphicon glyphicon-map-marker</li>
+                                            <li><i class="glyphicon glyphicon-adjust"></i> glyphicon glyphicon-adjust</li>
+                                            <li><i class="glyphicon glyphicon-tint"></i> glyphicon glyphicon-tint</li>
+                                            <li><i class="glyphicon glyphicon-edit"></i> glyphicon glyphicon-edit</li>
+                                            <li><i class="glyphicon glyphicon-share"></i> glyphicon glyphicon-share</li>
+                                            <li><i class="glyphicon glyphicon-check"></i> glyphicon glyphicon-check</li>
+                                            <li><i class="glyphicon glyphicon-move"></i> glyphicon glyphicon-move</li>
+                                            <li><i class="glyphicon glyphicon-step-backward"></i> glyphicon glyphicon-step-backward</li>
+                                            <li><i class="glyphicon glyphicon-fast-backward"></i> glyphicon glyphicon-fast-backward</li>
+                                            <li><i class="glyphicon glyphicon-backward"></i> glyphicon glyphicon-backward</li>
+                                            <li><i class="glyphicon glyphicon-play"></i> glyphicon glyphicon-play</li>
+                                            <li><i class="glyphicon glyphicon-pause"></i> glyphicon glyphicon-pause</li>
+                                            <li><i class="glyphicon glyphicon-stop"></i> glyphicon glyphicon-stop</li>
+                                            <li><i class="glyphicon glyphicon-forward"></i> glyphicon glyphicon-forward</li>
+                                            <li><i class="glyphicon glyphicon-fast-forward"></i> glyphicon glyphicon-fast-forward</li>
+                                            <li><i class="glyphicon glyphicon-step-forward"></i> glyphicon glyphicon-step-forward</li>
+                                            <li><i class="glyphicon glyphicon-eject"></i> glyphicon glyphicon-eject</li>
+                                            <li><i class="glyphicon glyphicon-chevron-left"></i> glyphicon glyphicon-chevron-left</li>
+                                            <li><i class="glyphicon glyphicon-chevron-right"></i> glyphicon glyphicon-chevron-right</li>
+                                            <li><i class="glyphicon glyphicon-plus-sign"></i> glyphicon glyphicon-plus-sign</li>
+                                            <li><i class="glyphicon glyphicon-minus-sign"></i> glyphicon glyphicon-minus-sign</li>
+                                            <li><i class="glyphicon glyphicon-remove-sign"></i> glyphicon glyphicon-remove-sign</li>
+                                            <li><i class="glyphicon glyphicon-ok-sign"></i> glyphicon glyphicon-ok-sign</li>
+
+                                            <li><i class="glyphicon glyphicon-question-sign"></i> glyphicon glyphicon-question-sign</li>
+                                            <li><i class="glyphicon glyphicon-info-sign"></i> glyphicon glyphicon-info-sign</li>
+                                            <li><i class="glyphicon glyphicon-screenshot"></i> glyphicon glyphicon-screenshot</li>
+                                            <li><i class="glyphicon glyphicon-remove-circle"></i> glyphicon glyphicon-remove-circle</li>
+                                            <li><i class="glyphicon glyphicon-ok-circle"></i> glyphicon glyphicon-ok-circle</li>
+                                            <li><i class="glyphicon glyphicon-ban-circle"></i> glyphicon glyphicon-ban-circle</li>
+                                            <li><i class="glyphicon glyphicon-arrow-left"></i> glyphicon glyphicon-arrow-left</li>
+                                            <li><i class="glyphicon glyphicon-arrow-right"></i> glyphicon glyphicon-arrow-right</li>
+                                            <li><i class="glyphicon glyphicon-arrow-up"></i> glyphicon glyphicon-arrow-up</li>
+                                            <li><i class="glyphicon glyphicon-arrow-down"></i> glyphicon glyphicon-arrow-down</li>
+                                            <li><i class="glyphicon glyphicon-share-alt"></i> glyphicon glyphicon-share-alt</li>
+                                            <li><i class="glyphicon glyphicon-resize-full"></i> glyphicon glyphicon-resize-full</li>
+                                            <li><i class="glyphicon glyphicon-resize-small"></i> glyphicon glyphicon-resize-small</li>
+                                            <li><i class="glyphicon glyphicon-plus"></i> glyphicon glyphicon-plus</li>
+                                            <li><i class="glyphicon glyphicon-minus"></i> glyphicon glyphicon-minus</li>
+                                            <li><i class="glyphicon glyphicon-asterisk"></i> glyphicon glyphicon-asterisk</li>
+                                            <li><i class="glyphicon glyphicon-exclamation-sign"></i> glyphicon glyphicon-exclamation-sign</li>
+                                            <li><i class="glyphicon glyphicon-gift"></i> glyphicon glyphicon-gift</li>
+                                            <li><i class="glyphicon glyphicon-leaf"></i> glyphicon glyphicon-leaf</li>
+                                            <li><i class="glyphicon glyphicon-fire"></i> glyphicon glyphicon-fire</li>
+                                            <li><i class="glyphicon glyphicon-eye-open"></i> glyphicon glyphicon-eye-open</li>
+                                            <li><i class="glyphicon glyphicon-eye-close"></i> glyphicon glyphicon-eye-close</li>
+                                            <li><i class="glyphicon glyphicon-warning-sign"></i> glyphicon glyphicon-warning-sign</li>
+                                            <li><i class="glyphicon glyphicon-plane"></i> glyphicon glyphicon-plane</li>
+                                            <li><i class="glyphicon glyphicon-calendar"></i> glyphicon glyphicon-calendar</li>
+                                            <li><i class="glyphicon glyphicon-random"></i> glyphicon glyphicon-random</li>
+                                            <li><i class="glyphicon glyphicon-comment"></i> glyphicon glyphicon-comment</li>
+                                            <li><i class="glyphicon glyphicon-magnet"></i> glyphicon glyphicon-magnet</li>
+
+                                            <li><i class="glyphicon glyphicon-chevron-up"></i> glyphicon glyphicon-chevron-up</li>
+                                            <li><i class="glyphicon glyphicon-chevron-down"></i> glyphicon glyphicon-chevron-down</li>
+                                            <li><i class="glyphicon glyphicon-retweet"></i> glyphicon glyphicon-retweet</li>
+                                            <li><i class="glyphicon glyphicon-shopping-cart"></i> glyphicon glyphicon-shopping-cart</li>
+                                            <li><i class="glyphicon glyphicon-folder-close"></i> glyphicon glyphicon-folder-close</li>
+                                            <li><i class="glyphicon glyphicon-folder-open"></i> glyphicon glyphicon-folder-open</li>
+                                            <li><i class="glyphicon glyphicon-resize-vertical"></i> glyphicon glyphicon-resize-vertical</li>
+                                            <li><i class="glyphicon glyphicon-resize-horizontal"></i> glyphicon glyphicon-resize-horizontal</li>
+                                            <li><i class="glyphicon glyphicon-hdd"></i> glyphicon glyphicon-hdd</li>
+                                            <li><i class="glyphicon glyphicon-bullhorn"></i> glyphicon glyphicon-bullhorn</li>
+                                            <li><i class="glyphicon glyphicon-bell"></i> glyphicon glyphicon-bell</li>
+                                            <li><i class="glyphicon glyphicon-certificate"></i> glyphicon glyphicon-certificate</li>
+                                            <li><i class="glyphicon glyphicon-thumbs-up"></i> glyphicon glyphicon-thumbs-up</li>
+                                            <li><i class="glyphicon glyphicon-thumbs-down"></i> glyphicon glyphicon-thumbs-down</li>
+                                            <li><i class="glyphicon glyphicon-hand-right"></i> glyphicon glyphicon-hand-right</li>
+                                            <li><i class="glyphicon glyphicon-hand-left"></i> glyphicon glyphicon-hand-left</li>
+                                            <li><i class="glyphicon glyphicon-hand-up"></i> glyphicon glyphicon-hand-up</li>
+                                            <li><i class="glyphicon glyphicon-hand-down"></i> glyphicon glyphicon-hand-down</li>
+                                            <li><i class="glyphicon glyphicon-circle-arrow-right"></i> glyphicon glyphicon-circle-arrow-right</li>
+                                            <li><i class="glyphicon glyphicon-circle-arrow-left"></i> glyphicon glyphicon-circle-arrow-left</li>
+                                            <li><i class="glyphicon glyphicon-circle-arrow-up"></i> glyphicon glyphicon-circle-arrow-up</li>
+                                            <li><i class="glyphicon glyphicon-circle-arrow-down"></i> glyphicon glyphicon-circle-arrow-down</li>
+                                            <li><i class="glyphicon glyphicon-globe"></i> glyphicon glyphicon-globe</li>
+                                            <li><i class="glyphicon glyphicon-wrench"></i> glyphicon glyphicon-wrench</li>
+                                            <li><i class="glyphicon glyphicon-tasks"></i> glyphicon glyphicon-tasks</li>
+                                            <li><i class="glyphicon glyphicon-filter"></i> glyphicon glyphicon-filter</li>
+                                            <li><i class="glyphicon glyphicon-briefcase"></i> glyphicon glyphicon-briefcase</li>
+                                            <li><i class="glyphicon glyphicon-fullscreen"></i> glyphicon glyphicon-fullscreen</li>
+                                        </ul>                                        
+                                    </div>
+                                </div>
+                                
+                                <div class="block">
+                                    <div class="head">
+                                        <h2>Credit cards icons</h2>
+                                        <ul class="buttons">                                            
+                                            <li><a href="#" class="block_toggle"><span class="i-arrow-down-3"></span></a></li>
+                                            <li><a href="#" class="block_remove"><span class="i-cancel-2"></span></a></li>
+                                        </ul>                                        
+                                    </div>
+                                    <div class="content">
+                                        <ul class="icons">
+                                            <li><img src="img/cards/amex.png"/> amex.png</li>
+                                            <li><img src="img/cards/cirrus.png"/> cirrus.png</li>
+                                            <li><img src="img/cards/direct.png"/> direct.png</li>
+                                            <li><img src="img/cards/discover.png"/> discover.png</li>
+                                            <li><img src="img/cards/gift.png"/> gift.png</li>
+                                            <li><img src="img/cards/google.png"/> google.png</li>
+                                            <li><img src="img/cards/mastercard.png"/> mastercard.png</li>
+                                            <li><img src="img/cards/paypal.png"/> paypal.png</li>
+                                            <li><img src="img/cards/solo.png"/> solo.png</li>
+                                            <li><img src="img/cards/switch.png"/> switch.png</li>
+                                            <li><img src="img/cards/visa.png"/> visa.png</li>
+                                            <li><img src="img/cards/visae.png"/> visae.png</li>
+                                            <li><img src="img/cards/wu.png"/> wu.png</li>                                            
+                                        </ul>
+                                    </div>                                
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>                    
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+
+    </div>
+
+    
+</body>
+</html>

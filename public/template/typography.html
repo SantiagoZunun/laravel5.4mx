@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>        
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />    
+    <!--[if gt IE 8]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />        
+    <![endif]-->                
+    <title>Typography - Leo - Premium Admin Template</title>
+    <link rel="icon" type="image/ico" href="favicon.ico"/>
+    
+    <link href="css/stylesheets.css" rel="stylesheet" type="text/css" />
+    
+    <!--[if lte IE 7]>
+        <script type='text/javascript' src='js/other/lte-ie7.js'></script>
+    <![endif]-->    
+    
+    <script type='text/javascript' src='js/jquery/jquery.min.js'></script>
+    <script type='text/javascript' src='js/jquery/jquery-ui-1.10.3.custom.min.js'></script>
+    <script type='text/javascript' src='js/jquery/jquery-migrate.min.js'></script>
+    <script type='text/javascript' src='js/jquery/globalize.js'></script>
+    
+    <script type='text/javascript' src='js/bootstrap/bootstrap.min.js'></script>    
+    <script type='text/javascript' src='js/cookies/jquery.cookies.2.2.0.min.js'></script>
+    
+    <script type='text/javascript' src='js/scrollup/jquery.scrollUp.min.js'></script>
+    
+    <script type='text/javascript' src='js/plugins.js'></script>    
+    <script type='text/javascript' src='js/actions.js'></script>
+</head>
+<body>    
+    
+    <div id="wrapper">
+        
+        <div id="header">
+            
+            <div class="wrap">
+                
+                <a href="index.html" class="logo"></a>
+                
+                <div class="buttons fl">
+                    <div class="item">
+                        <a href="#" class="btn btn-primary btn-sm c_layout">
+                            <span class="i-layout-8"></span>                            
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="btn btn-primary btn-sm c_screen">
+                            <span class="i-stretch"></span>                            
+                        </a>
+                    </div>                    
+                </div>
+                
+                <div class="buttons">
+                    <div class="item">
+                        <a href="#" class="btn btn-primary btn-sm">
+                            <span class="i-cog"></span>
+                        </a>
+                        <div class="popup">
+                            <div class="head">
+                                <h2>Settings</h2>
+                            </div>
+                            <div class="content np">      
+                                <div class="row">
+                                    <div class="controls-row">
+                                        <div class="col-md-3">Themes:</div>
+                                        <div class="col-md-9 themes">
+                                            <a href="#" class="default tip" data-theme="" title="Default"></a>
+                                            <a href="#" class="dark tip" data-theme="themeDark" title="Dark"></a>
+                                            <a href="#" class="simple tip" data-theme="themeSimple" title="Simple"></a>
+                                            <div class="help-block">On click theme will changed and saved settings</div>
+                                        </div>
+                                    </div>               
+                                    <div class="controls-row">
+                                        <div class="col-md-3">Backgrounds:</div>
+                                        <div class="col-md-9 backgrounds">
+                                            <a href="#" class="default tip" data-theme="" title="Default"></a>                                            
+                                            <a href="#" class="b_bcrosshatch" data-back="b_bcrosshatch"></a>
+                                            <a href="#" class="b_crosshatch" data-back="b_crosshatch"></a>
+                                            <a href="#" class="b_cube" data-back="b_cube"></a>
+                                            <a href="#" class="b_dots" data-back="b_dots"></a>
+                                            <a href="#" class="b_grid" data-back="b_grid"></a>
+                                            <a href="#" class="b_hline" data-back="b_hline"></a>
+                                            <a href="#" class="b_simple" data-back="b_simple"></a>
+                                            <a href="#" class="b_vline" data-back="b_vline"></a>
+                                            <div class="help-block">On click background will changed and saved settings</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <div class="side fr">
+                                    <button class="btn btn-primary popup-close">Close</button>
+                                </div>                                
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="item">
+                        <a href="#" class="btn btn-primary btn-sm">
+                            <span class="i-chat"></span>
+                        </a>
+                        <div class="popup">
+                            <div class="head">
+                                <h2>Messages</h2>
+                            </div>
+                            <div class="content npb messages minify" id="messages"></div>
+                            <div class="footer">
+                                <div class="side fl">
+                                    <button class="btn btn-link">Show all</button>
+                                </div>
+                                <div class="side fr">
+                                    <button class="btn btn-primary popup-close">Close</button>
+                                </div>                                
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="item">                        
+                        <div class="btn-group">                        
+                            <a href="#" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
+                                <span class="i-forward"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><span class="i-profile"></span> Profile</a></li>
+                                <li><a href="#"><span class="i-tools"></span> Controls</a></li>                                
+                                <li><a href="#"><span class="i-locked"></span> Lock</a></li>
+                                <li><a href="#"><span class="i-forward"></span> Logout</a></li>
+                            </ul> 
+                        </div>
+                    </div>                
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div id="layout">
+        
+            <div id="sidebar">
+
+                <div class="user">
+                    <div class="pic">
+                        <img src="img/examples/users/dmitry_m.jpg"/>
+                    </div>
+                    <div class="info">
+                        <div class="name">
+                            <a href="#">John Doe</a>
+                        </div>
+                        <div class="buttons">
+                            <a href="#"><span class="i-cog"></span> Settings</a>
+                            <a href="#"><span class="i-chat"></span> Messages</a>
+                            <a href="#" class="fr"><span class="i-forward"></span> Logout</a>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="navigation">
+                    <li>
+                        <a href="index.html">Dashboard</a>
+                    </li>
+                    <li class="openable">
+                        <a href="#">UI Elements</a>
+                        <ul>
+                            <li>
+                                <a href="ui_elements.html">Elements</a>
+                            </li>
+                            <li>
+                                <a href="ui_widgets.html">Widgets</a>
+                            </li>
+                            <li>
+                                <a href="ui_buttons.html">Buttons</a>
+                            </li>
+                            <li>
+                                <a href="ui_icons.html">Icons</a>
+                            </li>
+                            <li>
+                                <a href="ui_grid.html">Grid system</a>
+                            </li>                        
+                        </ul>
+                    </li> 
+                    <li class="openable">
+                        <a href="#">Form Stuff</a>
+                        <ul>
+                            <li>
+                                <a href="form_elements.html">Form elements</a>
+                            </li>                            
+                            <li>
+                                <a href="form_validation.html">Form validation</a>
+                            </li>                                                        
+                            <li>
+                                <a href="form_wizard.html">Wizard</a>
+                            </li>
+                            <li>
+                                <a href="form_wysiwyg.html">WYSIWYG</a>
+                            </li>
+                            <li>
+                                <a href="form_code_editor.html">Code editor</a>
+                            </li>
+                        </ul>                        
+                    </li>                
+                    <li>
+                        <a href="messages.html">Messages</a>
+                    </li>                                
+                    <li>
+                        <a href="charts.html">Charts</a>
+                    </li>                                   
+                    <li class="openable">                        
+                        <a href="tables.html">Tables</a>
+                        <ul>
+                            <li>
+                                <a href="tables_default.html">Default tables</a>
+                            </li>
+                            <li>
+                                <a href="tables_sort.html">Sorting tables</a>
+                            </li>
+                            <li>
+                                <a href="tables_edit.html">Editable tables</a>
+                            </li>
+                        </ul>
+                    </li>                                                   
+                    <li class="active">
+                        <a href="typography.html">Typography</a>                       
+                    </li>
+                    <li>
+                        <a href="files.html">File handling</a>                       
+                    </li>                     
+                    <li>
+                        <a href="calendar.html">Calendar</a>                       
+                    </li>                    
+                    <li class="openable">
+                        <a href="#">Maps</a>
+                        <ul>
+                            <li>
+                                <a href="maps_vector.html">Vector maps</a>
+                            </li>
+                            <li>
+                                <a href="maps_google.html">Google maps</a>
+                            </li>                            
+                        </ul>
+                    </li>                    
+                    <li class="openable">
+                        <a href="#">Sample Pages</a>
+                        <ul>
+                            <li>
+                                <a href="sample_login.html">Login</a>
+                            </li>     
+                            <li>
+                                <a href="sample_user_edit.html">User edit</a>
+                            </li>       
+                            <li>
+                                <a href="sample_search.html">Search result</a>
+                            </li>                   
+                            <li>
+                                <a href="sample_faq.html">FAQ</a>
+                            </li>                            
+                            <li>
+                                <a href="sample_mailbox.html">Mailbox</a>
+                            </li>
+                            <li>
+                                <a href="sample_invoice.html">Invoice</a>
+                            </li>
+                            <li>
+                                <a href="sample_gallery.html">Gallery</a>
+                            </li>                            
+                            <li>
+                                <a href="sample_blank.html">Blank page</a>
+                            </li>    
+                            <li>
+                                <a href="sample_price.html">Pricing table</a>
+                            </li>
+                            <li>
+                                <a href="sample_payment.html">Payment table</a>
+                            </li>                            
+                            <li class="openable">
+                                <a href="#">Error pages</a>
+                                <ul>
+                                    <li><a href="sample_error_403.html">Error 403 forbidden</a></li>
+                                    <li><a href="sample_error_404.html">Error 404 not found</a></li>
+                                    <li><a href="sample_error_503.html">Error 503 service unavailable</a></li>
+                                </ul>
+                            </li>                            
+                        </ul>
+                    </li>
+                    <li class="openable">
+                        <a href="#" class="icon"><span class="i-star text-info"></span>Navigation samples<span class="label label-danger fr">+6</span></a>
+                        <ul>
+                            <li><a href="#" class="icon"><span class="i-battery text-danger"></span>Second level<span class="label label-info fr">$35,224</span></a></li>                            
+                            <li class="openable">
+                                <a href="#" class="icon"><span class="i-cart text-success"></span>Second level<span class="label label-danger fr">+3</span></a>
+                                <ul>
+                                    <li><a href="#" class="icon"><span class="i-film"></span>Third level<span class="label label-info fr">3</span><span class="label label-success fr">2</span><span class="label fr">1</span></a></li>
+                                    <li class="active"><a href="#" class="icon"><span class="i-cube text-info"></span>Active third level<span class="label label-info fr">3</span><span class="label label-info fr">2</span><span class="label label-info fr">1</span></a></li>
+                                    <li><a href="#" class="icon"><span class="i-info"></span>Third level<span class="label label-warning fr">3</span><span class="label label-danger fr">2</span><span class="label fr">1</span></a></li>
+                                </ul>
+                            </li>                            
+                            <li><a href="#" class="icon"><span class="i-box text-warning"></span>Second level<span class="label label-success fr">$1989.02</span></a></li>
+                        </ul>
+                    </li>                     
+                </ul>
+
+            </div>
+
+            <div id="content">  
+                
+                <div class="wrap">                    
+                    
+                    <div class="head">
+                        <div class="info">
+                            <h1>Typography</h1>
+                            <ul class="breadcrumb">
+                                <li><a href="#">Dashboard</a></li>                                
+                                <li class="active">Typography</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="search">
+                            <form action="" method="post">
+                                <input type="text" class="form-control" placeholder="search..."/>                                
+                                <button type="submit"><span class="i-calendar"></span></button>
+                                <button type="submit"><span class="i-magnifier"></span></button>
+                            </form>
+                        </div>                        
+                    </div>                                                                    
+                    
+                    <div class="container full">
+                        
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="typography">
+
+                                    <h1>h1. Heading 1</h1>
+                                    <h2>h2. Heading 2</h2>
+                                    <h3>h3. Heading 3</h3>
+                                    <h4>h4. Heading 4</h4>
+                                    <h5>h5. Heading 5</h5>
+                                    <h6>h6. Heading 6</h6>
+
+                                    <h5>Body copy</h5>
+                                    <p>Nullam quis risus eget urna mollis ornare vel eu leo. <strong>Cum sociis natoque penatibus</strong> et magnis dis parturient montes, nascetur ridiculus mus. <em>Nullam id dolor id nibh</em> ultricies vehicula.</p>
+                                    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                                    <p>Maecenas sed diam eget risus varius <strong>blandit sit amet</strong> non magna. <em>Donec id elit non mi porta</em> gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>                       
+
+                                    <h5>Lead body copy</h5>                        
+                                    <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
+
+                                    <h5>Emphasis</h5>
+                                    <p>Some default text and <small>This line of text is meant to be treated as fine print.</small></p>                        
+
+                                    <h5>Emphasis classes</h5>
+                                    <p class="muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+                                    <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
+                                    <p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
+                                    <p class="text-info">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.</p>
+                                    <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>                        
+
+                                    <h5>Lists</h5>
+                                    <ul>
+                                        <li>Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</li>
+                                        <li>Etiam porta sem malesuada magna mollis euismod.</li>
+                                        <li>Donec ullamcorper nulla non metus auctor fringilla.</li>
+                                        <li>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.</li>
+                                        <li>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</li>
+                                    </ul>
+
+                                    <h5>Description</h5>
+                                    <dl>
+                                        <dt>Description lists</dt>
+                                        <dd>A description list is perfect for defining terms.</dd>
+                                        <dt>Euismod</dt>
+                                        <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+                                        <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+                                        <dt>Malesuada porta</dt>
+                                        <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+                                    </dl>                                    
+                                    
+                                    <h5>Addresses</h5>
+                                    <address>
+                                        <strong>Twitter, Inc.</strong><br>
+                                        795 Folsom Ave, Suite 600<br>
+                                        San Francisco, CA 94107<br>
+                                        <abbr title="Phone">P:</abbr> (123) 456-7890
+                                    </address>
+
+                                    <address>
+                                        <strong>Full Name</strong><br>
+                                        <a href="mailto:#">first.last@gmail.com</a>
+                                    </address>                                      
+                                    
+                                    <h5>Default blockquote</h5>
+                                    <blockquote>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                    </blockquote>                        
+
+                                    <h5>Blockquote options</h5>                        
+                                    <blockquote>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                        <small>Someone famous <cite title="Source Title">Source Title</cite></small>
+                                    </blockquote>                                        
+                                    
+                                    <h5>Labels and Badges</h5>
+                                    <p>Nullam quis <span class="label">Default</span> risus eget <span class="label label-success">Success</span> urna mollis ornare <span class="label label-danger">Warning</span> vel eu leo. Cum sociis natoque penatibus <span class="label label-danger">Important</span> et magnis dis parturient montes, nascetur <span class="label label-info">Info</span> ridiculus mus. Nullam id dolor id nibh ultricies <span class="label label-inverse">Inverse</span> vehicula.</p>
+                                    <p>Cum sociis <span class="badge">1</span> natoque penatibus et magnis <span class="badge badge-success">2</span> dis parturient montes, <span class="badge badge-warning">4</span> nascetur ridiculus mus. Donec ullamcorper <span class="badge badge-warning">6</span> nulla non metus auctor fringilla. Duis mollis, est non <span class="badge badge-info">8</span> commodo luctus, nisi erat porttitor ligula, eget lacinia odio <span class="badge badge-inverse">10</span> sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>                        
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>                    
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+
+    </div>
+
+    
+</body>
+</html>
