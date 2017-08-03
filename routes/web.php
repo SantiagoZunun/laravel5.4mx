@@ -63,23 +63,18 @@ Route::group(['middleware' => 'web'], function () {
     Route::resource('Empleados', 'Admin\EmpleadosController'); 
     Route::resource('Vistas', 'Admin\VistaController'); 
     
-
     
-
-    Route::get('estados', 'paisesController@getestados');
-
-
-
-    
-
-    Route::get('towns/{id}','paisesController@getTowns');
-
 
     Route::get('Usu_ListaUsuarios','Admin\UsuariosController@listausuarios');
     Route::get('Usu_Detalle','Admin\UsuariosController@edit');
 
     //Alunos
     Route::resource('Alumnos', 'Admin\AlumnosController'); 
+
+
+    Route::get('/estados/{id}','Admin\PaisesController@listaestados');
+
+
 
 
    

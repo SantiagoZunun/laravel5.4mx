@@ -127,7 +127,7 @@
 	                <div class="controls-row">
 	                  <div class="col-md-2">Pais</div>
 	                  <div class="col-md-3">
-	                    <select class="select2" style="width: 220px;" id="pais_alta" name="pais_alta"  onchange="cargarEstados()" >
+	                    <select class="select2" style="width: 220px;" id="selectPais" name="selectPais"  >
 	                      <option value=""></option>
 	                      @foreach ($paises as $Pais)
 				           <option value="{{ $Pais->pais_Id }}"> {{ $Pais->pais_Clave }} - {{ $Pais->pais_Pais }}</option>
@@ -138,7 +138,7 @@
 	                  </div>
 	                  <div class="col-md-2">Estados</div>
 	                  <div class="col-md-3">
-	                    <select class="select2" style="width: 220px;" id="estado_alta" name="estado_alta"  >
+	                    <select class="select2" style="width: 220px;" id="selectEstado" name="selectEstado"  >
 	                    </select>
 	                  </div>
 	                </div>
@@ -233,47 +233,14 @@
 </div>    <!-- cierra wrapper -->
 
 @endsection
-
-
-
-<script type="text/javascript">
-
-
   
-  function cargarEstados(){
 
-    var idPais = document.getElementById('pais_alta').value;
-        
-    // Consultar estados
-    $.ajax({
-      type: 'get',
-      url: '{!!URL::to('estados')!!}',
-      data: {'id':idPais},
 
-      success: function (data){   
-
-      console.log(data);
-
-        var estados = JSON.parse(data);
-
-        var sEstados = document.getElementById('estado_alta'); 
-        sEstados.innerHTML = '';
-
-        var option1 = document.createElement('OPTION');
-        sEstados.appendChild(option1);
-
-        for(var i=0; i<estados.length; i++){
-            var option = document.createElement('OPTION');
-            option.innerHTML = estados[i]['estado_Estado'];
-            option.value = estados[i]['estado_Id'];
-            sEstados.appendChild(option);
-        }	        
-      }
-    });
-  }
+ 
 
 
 
-</script>
+
+
 
 

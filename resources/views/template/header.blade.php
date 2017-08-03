@@ -2,7 +2,7 @@
 <head>        
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />    
- 
+  <meta name="csrf-token" content="{{ csrf_token() }}">
 
 
 
@@ -18,8 +18,9 @@
   <!--[if lte IE 7]>
       <script type='text/javascript' src='js/other/lte-ie7.js'></script>
   <![endif]-->    
- <script  src='{{asset('js/jquery-3.2.1.min.js')}}'></script>
-  // <script type='text/javascript' src='{{asset('template/js/jquery/jquery.min.js')}}'></script>
+ 
+
+  <script type='text/javascript' src='{{asset('template/js/jquery/jquery.min.js')}}'></script>
   <script  src='{{asset('template/js/funciones.js')}}'></script>
   <script type='text/javascript' src='{{asset('template/js/jquery/jquery-ui-1.10.3.custom.min.js')}}'></script>  
 
@@ -42,11 +43,14 @@
   <script type='text/javascript' src='{{asset('template/js/stepy/jquery.stepy.min.js')}}'></script>
   <script type='text/javascript' src='{{asset('template/js/plugins.js')}}'></script>    
   <script type='text/javascript' src='{{asset('template/js/actions.js')}}'></script>
+ 
+  {{-- Agregados  --}}
+  
 
   
-  <script  src='{{asset('js/usuarios.js')}}'></script>
+ 
+
   
-   <meta name="csrf-token" content="{{ csrf_token() }}">
   <script>
         window.Laravel = <?php echo json_encode([
             'csrfToken' => csrf_token(),

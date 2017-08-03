@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use App\Http\Controllers\Controller;
 
-use App\Admin\Paises
-use App\Admin\Estados
+use App\Admin\Paises;
+use App\Admin\Estados;
 
 class PaisesController extends Controller
 {
@@ -21,6 +21,7 @@ class PaisesController extends Controller
         //
     }
 
+
     public function getTowns(Request $request, $id){
         if($request->ajax()){
             $towns = Estados::towns($id);
@@ -29,7 +30,11 @@ class PaisesController extends Controller
     }
 
 
-   
+   public function listaestados($id){
+          return Estados::where('estado_idPais', $id)->get();
+    }
+
+
 
     public function getestados(Request $request){
         if($request->ajax()){
