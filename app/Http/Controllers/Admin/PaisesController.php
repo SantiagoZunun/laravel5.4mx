@@ -29,6 +29,10 @@ class PaisesController extends Controller
     }
 
 
+   public function listaestados($id){
+          return Estados::where('estado_idPais', $id)->get();
+    }
+    
    
 
     public function getestados(Request $request){
