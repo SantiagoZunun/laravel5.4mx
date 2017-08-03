@@ -63,17 +63,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::resource('Empleados', 'Admin\EmpleadosController'); 
     Route::resource('Vistas', 'Admin\VistaController'); 
     
-
     
-
-    Route::get('estados', 'paisesController@getestados');
-
-
-
-    
-
-    Route::get('towns/{id}','paisesController@getTowns');
-
 
     Route::get('Usu_ListaUsuarios','Admin\UsuariosController@listausuarios');
     Route::get('Usu_Detalle','Admin\UsuariosController@edit');
@@ -82,26 +72,13 @@ Route::group(['middleware' => 'web'], function () {
     Route::resource('Alumnos', 'Admin\AlumnosController'); 
 
 
+    Route::get('/estados/{id}','Admin\PaisesController@listaestados');
+
+
+
+
    
 });
 
  
-
-
-    
-   
-
-
-
-
-// Route::get('language/{lang}', function($lang){
-//   \Session::put('locale', $lang);
-//   //echo trans($lang);
-//   return redirect()->back();
-// })->middleware('language'); 
-
-
-
-
-
 
